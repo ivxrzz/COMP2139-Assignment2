@@ -9,20 +9,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21438de4-23c9-4540-a4ae-d10bab7e0678" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Assignment1/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Assignment1/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Assignment1/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Assignment1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Assignment1/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment1.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/COMP2139Assignment2.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Assignment1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Assignment1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment1/logs/log-20251203.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/logs/log-20251203.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/logs/log-20251204.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/logs/log-20251204.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/apphost.exe" afterDir="false" />
@@ -30,7 +24,6 @@
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/refint/Assignment1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/refint/Assignment1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment1/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +34,7 @@
     <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Assignment1" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -82,22 +75,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Assignment1: http.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Assignment1: http.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Assignment1: http">
     <configuration name="Assignment1: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Assignment1/Assignment1.csproj" />
@@ -160,6 +154,8 @@
       <workItem from="1764828733724" duration="592000" />
       <workItem from="1764829462906" duration="848000" />
       <workItem from="1764830318236" duration="369000" />
+      <workItem from="1764830691694" duration="806000" />
+      <workItem from="1764831502897" duration="886000" />
     </task>
     <servers />
   </component>
@@ -170,7 +166,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <ignored-roots>
-      <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/Assignment1" />
     </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
