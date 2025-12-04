@@ -1,0 +1,38 @@
+﻿@model Assignment1.Models.PurchasedEvent
+
+@{
+    ViewData["Title"] = "Your Ticket";
+    var evt = Model.Event;
+}
+
+<div class="card" style="max-width: 600px; margin: 0 auto;">
+    <div class="card-body">
+        <h2 class="card-title">Ticket for @evt.Title</h2>
+
+        <p><strong>Name:</strong> @Model.GuestName</p>
+        <p><strong>Email:</strong> @Model.GuestEmail</p>
+        <p><strong>Date & Time:</strong> @evt.StartTimeDate.ToLocalTime().ToString("f")</p>
+        <p><strong>Quantity:</strong> @Model.Quantity</p>
+
+        <div class="mb-3">
+            <label><strong>QR Code:</strong></label><br />
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=@Model.PurchasedEventId"
+                 alt="Ticket QR Code" />
+        </div>
+
+        <button class="btn btn-primary" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+</div>
+
+@{
+
+    var print = Context.Request.Query["print"].ToString();
+}
+
+@if (print == "true")
+{
+    <script>
+
+        window.onload = () => window.print();
+    </script>
+}

@@ -1,0 +1,57 @@
+﻿@model Assignment1.Models.PurchasedEvent
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ticket PDF</title>
+
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            padding: 40px; 
+            background: white;
+        }
+
+        .ticket-box {
+            border: 2px solid black;
+            padding: 20px;
+            width: 450px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="ticket-box">
+    <h2>Event Ticket</h2>
+
+    <p><strong>Event:</strong> @Model.Event.Title</p>
+    <p><strong>Date:</strong> @Model.Event.StartTimeDate.ToLocalTime().ToString("f")</p>
+    <p><strong>Category:</strong> @Model.Event.Category?.Name</p>
+    <p><strong>Name:</strong> @Model.GuestName</p>
+    <p><strong>Email:</strong> @Model.GuestEmail</p>
+    <p><strong>Quantity:</strong> @Model.Quantity</p>
+    
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=@Model.PurchasedEventId" />
+</div>
+
+<script>
+    window.print();
+</script>
+
+</body>
+</html>

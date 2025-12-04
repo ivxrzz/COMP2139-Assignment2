@@ -1,0 +1,106 @@
+﻿@{
+    ViewData["Title"] = "Analytics Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+}
+
+<h1 class="mb-4">Analytics Dashboard</h1>
+
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="card shadow-sm">
+            <div class="card-header">Ticket Sales by Category</div>
+            <div class="card-body">
+                <canvas id="ticketSalesChart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 mb-4">
+        <div class="card shadow-sm">
+            <div class="card-header">Revenue per Month</div>
+            <div class="card-body">
+                <canvas id="revenueChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Top 5  -->
+<div class="card shadow-sm">
+    <div class="card-header">Top 5 Best-Selling Events</div>
+    <div class="card-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Tickets Sold</th>
+                    <th>Revenue</th>
+                </tr>
+            </thead>
+            <tbody id="topEventsTableBody">
+                <!-- Rows injected via JS -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        async function loadAnalytics() {
+            const salesData = await fetch('@Url.Action("TicketSalesByCategory", "Analytics", new { area = "AdminOrganizer" })').then(r => r.json());
+            const revenueData = await fetch('@Url.Action("RevenuePerMonth", "Analytics", new { area = "AdminOrganizer" })').then(r => r.json());
+            const topEvents = await fetch('@Url.Action("TopEvents", "Analytics", new { area = "AdminOrganizer" })').then(r => r.json());
+
+            // Ticket Sales Chart
+            new Chart(document.getElementById('ticketSalesChart'), {
+                type: 'bar',
+                data: {
+                    labels: salesData.map(x => x.category),
+                    datasets: [{
+                        label: 'Tickets Sold',
+                        data: salesData.map(x => x.ticketsSold),
+                        backgroundColor: 'rgba(54, 162, 235, 0.7)',
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: { legend: { display: false } }
+                }
+            });
+
+            // Revenue Chart
+            new Chart(document.getElementById('revenueChart'), {
+                type: 'line',
+                data: {
+                    labels: revenueData.map(x => x.month),
+                    datasets: [{
+                        label: 'Revenue ($)',
+                        data: revenueData.map(x => x.revenue),
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 2,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: { legend: { display: true } }
+                }
+            });
+
+            // Populate Top Events Table
+            const tbody = document.getElementById('topEventsTableBody');
+            topEvents.forEach(e => {
+                const row = `<tr>
+                                <td>${e.name}</td>
+                                <td>${e.ticketsSold}</td>
+                                <td>$${e.revenue}</td>
+                             </tr>`;
+                tbody.insertAdjacentHTML('beforeend', row);
+            });
+        }
+
+        loadAnalytics();
+    </script>
+}

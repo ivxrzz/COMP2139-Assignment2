@@ -1,0 +1,1302 @@
+2025-12-04 00:35:09.226 -05:00 [INF] User profile is available. Using 'C:\Users\olpin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-04 00:35:20.449 -05:00 [INF] Executed DbCommand (358ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-12-04 00:35:21.044 -05:00 [INF] Executed DbCommand (17ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-12-04 00:35:21.061 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-12-04 00:35:21.131 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-12-04 00:35:21.322 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-12-04 00:35:21.414 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-12-04 00:35:21.491 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-12-04 00:35:21.516 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-12-04 00:35:21.530 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-12-04 00:35:21.541 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-12-04 00:35:21.554 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-12-04 00:35:21.566 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-12-04 00:35:21.812 -05:00 [INF] Now listening on: http://localhost:5130
+2025-12-04 00:35:21.829 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-04 00:35:21.837 -05:00 [INF] Hosting environment: Development
+2025-12-04 00:35:21.844 -05:00 [INF] Content root path: C:\Users\olpin\Downloads\Assignment1 (2)\Assignment1\Assignment1
+2025-12-04 00:35:22.088 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/ - null null
+2025-12-04 00:35:22.116 -05:00 [WRN] Failed to determine the https port for redirect.
+2025-12-04 00:35:22.238 -05:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-12-04 00:35:22.251 -05:00 [INF] Executing endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 00:35:22.325 -05:00 [INF] Route matched with {action = "Privacy", controller = "Home", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Privacy(System.String, System.Nullable`1[System.Int32], System.String) on controller Assignment1.Controllers.HomeController (Assignment1).
+2025-12-04 00:35:22.379 -05:00 [INF] Executing action method Assignment1.Controllers.HomeController.Privacy (Assignment1) - Validation state: "Valid"
+2025-12-04 00:35:22.590 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."CategoryId", c."Name"
+FROM "Categories" AS c
+2025-12-04 00:35:22.932 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name"
+FROM "Events" AS e
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+2025-12-04 00:35:23.075 -05:00 [INF] Executed action method Assignment1.Controllers.HomeController.Privacy (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 681.7277ms.
+2025-12-04 00:35:23.123 -05:00 [INF] Executing ViewResult, running view Privacy.
+2025-12-04 00:35:23.697 -05:00 [INF] Executed ViewResult - view Privacy executed in 576.7314ms.
+2025-12-04 00:35:23.716 -05:00 [INF] Executed action Assignment1.Controllers.HomeController.Privacy (Assignment1) in 1375.6222ms
+2025-12-04 00:35:23.730 -05:00 [INF] Executed endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 00:35:23.773 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/ - 200 null text/html; charset=utf-8 1691.2175ms
+2025-12-04 00:35:29.906 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Identity/Account/Login - null null
+2025-12-04 00:35:29.924 -05:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-12-04 00:35:29.932 -05:00 [INF] Executing endpoint '/Account/Login'
+2025-12-04 00:35:29.964 -05:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-12-04 00:35:29.996 -05:00 [INF] Executing handler method Assignment1.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2025-12-04 00:35:30.014 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-12-04 00:35:30.024 -05:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-12-04 00:35:30.042 -05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-12-04 00:35:30.049 -05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-12-04 00:35:30.185 -05:00 [INF] Executed page /Account/Login in 212.1188ms
+2025-12-04 00:35:30.194 -05:00 [INF] Executed endpoint '/Account/Login'
+2025-12-04 00:35:30.199 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Identity/Account/Login - 200 null text/html; charset=utf-8 293.6094ms
+2025-12-04 00:35:32.184 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5130/Identity/Account/Login - application/x-www-form-urlencoded 261
+2025-12-04 00:35:32.239 -05:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-12-04 00:35:32.250 -05:00 [INF] Executing endpoint '/Account/Login'
+2025-12-04 00:35:32.264 -05:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-12-04 00:35:32.391 -05:00 [INF] Executing handler method Assignment1.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2025-12-04 00:35:32.462 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-12-04 00:35:32.798 -05:00 [INF] Executed DbCommand (19ms) [Parameters=[@__user_Id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ClaimType", a."ClaimValue", a."UserId"
+FROM "AspNetUserClaims" AS a
+WHERE a."UserId" = @__user_Id_0
+2025-12-04 00:35:32.861 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "AspNetRoles" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+2025-12-04 00:35:32.881 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-12-04 00:35:32.926 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__role_Id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."ClaimType", a."ClaimValue"
+FROM "AspNetRoleClaims" AS a
+WHERE a."RoleId" = @__role_Id_0
+2025-12-04 00:35:33.014 -05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-12-04 00:35:33.028 -05:00 [INF] User logged in.
+2025-12-04 00:35:33.042 -05:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2025-12-04 00:35:33.062 -05:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2025-12-04 00:35:33.068 -05:00 [INF] Executed page /Account/Login in 793.4577ms
+2025-12-04 00:35:33.078 -05:00 [INF] Executed endpoint '/Account/Login'
+2025-12-04 00:35:33.083 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5130/Identity/Account/Login - 302 0 null 899.4042ms
+2025-12-04 00:35:33.116 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/ - null null
+2025-12-04 00:35:33.142 -05:00 [INF] Executing endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 00:35:33.148 -05:00 [INF] Route matched with {action = "Privacy", controller = "Home", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Privacy(System.String, System.Nullable`1[System.Int32], System.String) on controller Assignment1.Controllers.HomeController (Assignment1).
+2025-12-04 00:35:33.163 -05:00 [INF] Executing action method Assignment1.Controllers.HomeController.Privacy (Assignment1) - Validation state: "Valid"
+2025-12-04 00:35:33.174 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."CategoryId", c."Name"
+FROM "Categories" AS c
+2025-12-04 00:35:33.193 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name"
+FROM "Events" AS e
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+2025-12-04 00:35:33.210 -05:00 [INF] Executed action method Assignment1.Controllers.HomeController.Privacy (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 39.0519ms.
+2025-12-04 00:35:33.225 -05:00 [INF] Executing ViewResult, running view Privacy.
+2025-12-04 00:35:33.259 -05:00 [INF] Executed ViewResult - view Privacy executed in 35.9945ms.
+2025-12-04 00:35:33.272 -05:00 [INF] Executed action Assignment1.Controllers.HomeController.Privacy (Assignment1) in 109.3869ms
+2025-12-04 00:35:33.290 -05:00 [INF] Executed endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 00:35:33.296 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/ - 200 null text/html; charset=utf-8 180.4374ms
+2025-12-04 00:35:35.480 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/MyAnalytics - null null
+2025-12-04 00:35:35.528 -05:00 [INF] Executing endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.MyAnalytics (Assignment1)'
+2025-12-04 00:35:35.545 -05:00 [INF] Route matched with {area = "AdminOrganizer", action = "MyAnalytics", controller = "Analytics", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MyAnalytics() on controller Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController (Assignment1).
+2025-12-04 00:35:35.566 -05:00 [INF] Executing action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.MyAnalytics (Assignment1) - Validation state: "Valid"
+2025-12-04 00:35:35.579 -05:00 [INF] Executed action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.MyAnalytics (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.1033ms.
+2025-12-04 00:35:35.600 -05:00 [INF] Executing ViewResult, running view MyAnalytics.
+2025-12-04 00:35:35.636 -05:00 [INF] Executed ViewResult - view MyAnalytics executed in 39.2009ms.
+2025-12-04 00:35:35.649 -05:00 [INF] Executed action Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.MyAnalytics (Assignment1) in 83.7476ms
+2025-12-04 00:35:35.659 -05:00 [INF] Executed endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.MyAnalytics (Assignment1)'
+2025-12-04 00:35:35.664 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/MyAnalytics - 200 null text/html; charset=utf-8 184.4291ms
+2025-12-04 00:35:35.707 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/TicketSalesByCategory - null null
+2025-12-04 00:35:35.731 -05:00 [INF] Executing endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TicketSalesByCategory (Assignment1)'
+2025-12-04 00:35:35.743 -05:00 [INF] Route matched with {area = "AdminOrganizer", action = "TicketSalesByCategory", controller = "Analytics", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TicketSalesByCategory() on controller Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController (Assignment1).
+2025-12-04 00:35:35.754 -05:00 [INF] Executing action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TicketSalesByCategory (Assignment1) - Validation state: "Valid"
+2025-12-04 00:35:35.847 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Name" AS "Category", (
+    SELECT count(*)::int
+    FROM "PurchasedEvents" AS p
+    INNER JOIN "Events" AS e ON p."EventId" = e."EventId"
+    WHERE e."CategoryId" = c."CategoryId") AS "TicketsSold"
+FROM "Categories" AS c
+2025-12-04 00:35:35.861 -05:00 [INF] Executed action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TicketSalesByCategory (Assignment1), returned result Microsoft.AspNetCore.Mvc.JsonResult in 102.3894ms.
+2025-12-04 00:35:35.874 -05:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[Assignment1.Areas.AdminOrganizer.Models.TicketSalesByCategoryModel, Assignment1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-04 00:35:36.115 -05:00 [INF] Executed action Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TicketSalesByCategory (Assignment1) in 361.8879ms
+2025-12-04 00:35:36.126 -05:00 [INF] Executed endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TicketSalesByCategory (Assignment1)'
+2025-12-04 00:35:36.131 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/TicketSalesByCategory - 200 null application/json; charset=utf-8 423.622ms
+2025-12-04 00:35:36.149 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/RevenuePerMonth - null null
+2025-12-04 00:35:36.167 -05:00 [INF] Executing endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.RevenuePerMonth (Assignment1)'
+2025-12-04 00:35:36.185 -05:00 [INF] Route matched with {area = "AdminOrganizer", action = "RevenuePerMonth", controller = "Analytics", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RevenuePerMonth() on controller Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController (Assignment1).
+2025-12-04 00:35:36.197 -05:00 [INF] Executing action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.RevenuePerMonth (Assignment1) - Validation state: "Valid"
+2025-12-04 00:35:36.421 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p0."Key", (
+    SELECT COALESCE(sum(p1."Quantity"::numeric * e."TicketPrice"), 0.0)
+    FROM (
+        SELECT p2."EventId", p2."Quantity", date_part('month', p2."PurchaseDate" AT TIME ZONE 'UTC')::int AS "Key"
+        FROM "PurchasedEvents" AS p2
+    ) AS p1
+    INNER JOIN "Events" AS e ON p1."EventId" = e."EventId"
+    WHERE p0."Key" = p1."Key" OR (p0."Key" IS NULL AND p1."Key" IS NULL))
+FROM (
+    SELECT date_part('month', p."PurchaseDate" AT TIME ZONE 'UTC')::int AS "Key"
+    FROM "PurchasedEvents" AS p
+) AS p0
+GROUP BY p0."Key"
+2025-12-04 00:35:36.432 -05:00 [INF] Executed action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.RevenuePerMonth (Assignment1), returned result Microsoft.AspNetCore.Mvc.JsonResult in 227.1794ms.
+2025-12-04 00:35:36.440 -05:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[Assignment1.Areas.AdminOrganizer.Models.RevenuePerMonthModel, Assignment1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-04 00:35:36.481 -05:00 [INF] Executed action Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.RevenuePerMonth (Assignment1) in 285.9456ms
+2025-12-04 00:35:36.489 -05:00 [INF] Executed endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.RevenuePerMonth (Assignment1)'
+2025-12-04 00:35:36.495 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/RevenuePerMonth - 200 null application/json; charset=utf-8 345.3312ms
+2025-12-04 00:35:36.516 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/TopEvents - null null
+2025-12-04 00:35:36.530 -05:00 [INF] Executing endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TopEvents (Assignment1)'
+2025-12-04 00:35:36.544 -05:00 [INF] Route matched with {area = "AdminOrganizer", action = "TopEvents", controller = "Analytics", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TopEvents() on controller Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController (Assignment1).
+2025-12-04 00:35:36.555 -05:00 [INF] Executing action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TopEvents (Assignment1) - Validation state: "Valid"
+2025-12-04 00:35:36.623 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Title" AS "Name", (
+    SELECT COALESCE(sum(p0."Quantity"), 0)::int
+    FROM "PurchasedEvents" AS p0
+    WHERE e."EventId" = p0."EventId") AS "TicketsSold", (
+    SELECT COALESCE(sum(p1."Quantity"::numeric * e."TicketPrice"), 0.0)
+    FROM "PurchasedEvents" AS p1
+    WHERE e."EventId" = p1."EventId") AS "Revenue"
+FROM "Events" AS e
+ORDER BY (
+    SELECT COALESCE(sum(p."Quantity"), 0)::int
+    FROM "PurchasedEvents" AS p
+    WHERE e."EventId" = p."EventId") DESC
+LIMIT @__p_0
+2025-12-04 00:35:36.637 -05:00 [INF] Executed action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TopEvents (Assignment1), returned result Microsoft.AspNetCore.Mvc.JsonResult in 76.438ms.
+2025-12-04 00:35:36.644 -05:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[Assignment1.Areas.AdminOrganizer.Models.TopEventModel, Assignment1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-04 00:35:36.655 -05:00 [INF] Executed action Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TopEvents (Assignment1) in 100.368ms
+2025-12-04 00:35:36.662 -05:00 [INF] Executed endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TopEvents (Assignment1)'
+2025-12-04 00:35:36.667 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/TopEvents - 200 null application/json; charset=utf-8 150.9584ms
+2025-12-04 00:35:37.123 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Home/Index - null null
+2025-12-04 00:35:37.145 -05:00 [INF] Executing endpoint 'Assignment1.Controllers.HomeController.Index (Assignment1)'
+2025-12-04 00:35:37.159 -05:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Assignment1.Controllers.HomeController (Assignment1).
+2025-12-04 00:35:37.169 -05:00 [INF] Executing action method Assignment1.Controllers.HomeController.Index (Assignment1) - Validation state: "Valid"
+2025-12-04 00:35:37.201 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__p_0
+LIMIT 1
+2025-12-04 00:35:37.282 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PurchasedEventId", p."EventId", p."GuestEmail", p."GuestName", p."PurchaseDate", p."Quantity", p."Rating", p."UserId", e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name"
+FROM "PurchasedEvents" AS p
+INNER JOIN "Events" AS e ON p."EventId" = e."EventId"
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+WHERE p."UserId" = @__userId_0
+ORDER BY e."StartTimeDate"
+2025-12-04 00:35:37.404 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name", p."PurchasedEventId", p."EventId", p."GuestEmail", p."GuestName", p."PurchaseDate", p."Quantity", p."Rating", p."UserId"
+FROM "Events" AS e
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+LEFT JOIN "PurchasedEvents" AS p ON e."EventId" = p."EventId"
+WHERE e."OrganizerId" = @__userId_0
+ORDER BY e."EventId", c."CategoryId"
+2025-12-04 00:35:37.422 -05:00 [INF] Executed action method Assignment1.Controllers.HomeController.Index (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 247.4401ms.
+2025-12-04 00:35:37.433 -05:00 [INF] Executing ViewResult, running view Index.
+2025-12-04 00:35:37.472 -05:00 [INF] Executed ViewResult - view Index executed in 41.2441ms.
+2025-12-04 00:35:37.480 -05:00 [INF] Executed action Assignment1.Controllers.HomeController.Index (Assignment1) in 311.2387ms
+2025-12-04 00:35:37.496 -05:00 [INF] Executed endpoint 'Assignment1.Controllers.HomeController.Index (Assignment1)'
+2025-12-04 00:35:37.504 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Home/Index - 200 null text/html; charset=utf-8 381.3717ms
+2025-12-04 00:35:46.002 -05:00 [INF] Application is shutting down...
+2025-12-04 01:12:52.774 -05:00 [INF] User profile is available. Using 'C:\Users\olpin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-04 01:12:54.715 -05:00 [INF] Executed DbCommand (89ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-12-04 01:12:54.865 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-12-04 01:12:54.873 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-12-04 01:12:54.898 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-12-04 01:12:54.967 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-12-04 01:12:55.017 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-12-04 01:12:55.045 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-12-04 01:12:55.058 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-12-04 01:12:55.071 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-12-04 01:12:55.081 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-12-04 01:12:55.091 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-12-04 01:12:55.100 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-12-04 01:12:55.201 -05:00 [INF] Now listening on: http://localhost:5130
+2025-12-04 01:12:55.208 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-04 01:12:55.213 -05:00 [INF] Hosting environment: Development
+2025-12-04 01:12:55.217 -05:00 [INF] Content root path: C:\Users\olpin\Downloads\Assignment1 (2)\Assignment1\Assignment1
+2025-12-04 01:12:55.721 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/ - null null
+2025-12-04 01:12:55.749 -05:00 [WRN] Failed to determine the https port for redirect.
+2025-12-04 01:12:55.861 -05:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-12-04 01:12:55.879 -05:00 [INF] Executing endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 01:12:55.963 -05:00 [INF] Route matched with {action = "Privacy", controller = "Home", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Privacy(System.String, System.Nullable`1[System.Int32], System.String) on controller Assignment1.Controllers.HomeController (Assignment1).
+2025-12-04 01:12:56.014 -05:00 [INF] Executing action method Assignment1.Controllers.HomeController.Privacy (Assignment1) - Validation state: "Valid"
+2025-12-04 01:12:56.239 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."CategoryId", c."Name"
+FROM "Categories" AS c
+2025-12-04 01:12:56.495 -05:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name"
+FROM "Events" AS e
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+2025-12-04 01:12:56.647 -05:00 [INF] Executed action method Assignment1.Controllers.HomeController.Privacy (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 614.8339ms.
+2025-12-04 01:12:56.721 -05:00 [INF] Executing ViewResult, running view Privacy.
+2025-12-04 01:12:57.241 -05:00 [INF] Executed ViewResult - view Privacy executed in 533.697ms.
+2025-12-04 01:12:57.259 -05:00 [INF] Executed action Assignment1.Controllers.HomeController.Privacy (Assignment1) in 1286.523ms
+2025-12-04 01:12:57.276 -05:00 [INF] Executed endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 01:12:57.337 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/ - 200 null text/html; charset=utf-8 1620.0494ms
+2025-12-04 01:13:03.185 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Identity/Account/Register - null null
+2025-12-04 01:13:03.225 -05:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-12-04 01:13:03.238 -05:00 [INF] Executing endpoint '/Account/Register'
+2025-12-04 01:13:03.306 -05:00 [INF] Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing page /Account/Register
+2025-12-04 01:13:03.381 -05:00 [INF] Executing handler method Assignment1.Areas.Identity.Pages.Account.RegisterModel.OnGetAsync - ModelState is "Valid"
+2025-12-04 01:13:03.400 -05:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-12-04 01:13:03.424 -05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-12-04 01:13:03.433 -05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-12-04 01:13:03.557 -05:00 [INF] Executed page /Account/Register in 238.3285ms
+2025-12-04 01:13:03.572 -05:00 [INF] Executed endpoint '/Account/Register'
+2025-12-04 01:13:03.592 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Identity/Account/Register - 200 null text/html; charset=utf-8 406.5313ms
+2025-12-04 01:13:08.300 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Identity/Account/Login - null null
+2025-12-04 01:13:08.354 -05:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-12-04 01:13:08.369 -05:00 [INF] Executing endpoint '/Account/Login'
+2025-12-04 01:13:08.408 -05:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-12-04 01:13:08.438 -05:00 [INF] Executing handler method Assignment1.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2025-12-04 01:13:08.458 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-12-04 01:13:08.469 -05:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-12-04 01:13:08.482 -05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-12-04 01:13:08.489 -05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-12-04 01:13:08.582 -05:00 [INF] Executed page /Account/Login in 163.5891ms
+2025-12-04 01:13:08.589 -05:00 [INF] Executed endpoint '/Account/Login'
+2025-12-04 01:13:08.594 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Identity/Account/Login - 200 null text/html; charset=utf-8 294.7657ms
+2025-12-04 01:13:12.487 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5130/Identity/Account/Login - application/x-www-form-urlencoded 289
+2025-12-04 01:13:12.524 -05:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-12-04 01:13:12.538 -05:00 [INF] Executing endpoint '/Account/Login'
+2025-12-04 01:13:12.553 -05:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-12-04 01:13:12.626 -05:00 [INF] Executing handler method Assignment1.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2025-12-04 01:13:12.708 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-12-04 01:13:13.130 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ClaimType", a."ClaimValue", a."UserId"
+FROM "AspNetUserClaims" AS a
+WHERE a."UserId" = @__user_Id_0
+2025-12-04 01:13:13.191 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "AspNetRoles" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+2025-12-04 01:13:13.209 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-12-04 01:13:13.239 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."ClaimType", a."ClaimValue"
+FROM "AspNetRoleClaims" AS a
+WHERE a."RoleId" = @__role_Id_0
+2025-12-04 01:13:13.260 -05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-12-04 01:13:13.273 -05:00 [INF] User logged in.
+2025-12-04 01:13:13.284 -05:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2025-12-04 01:13:13.302 -05:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2025-12-04 01:13:13.312 -05:00 [INF] Executed page /Account/Login in 748.6148ms
+2025-12-04 01:13:13.381 -05:00 [INF] Executed endpoint '/Account/Login'
+2025-12-04 01:13:13.428 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5130/Identity/Account/Login - 302 0 null 941.0217ms
+2025-12-04 01:13:13.451 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/ - null null
+2025-12-04 01:13:13.484 -05:00 [INF] Executing endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 01:13:13.489 -05:00 [INF] Route matched with {action = "Privacy", controller = "Home", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Privacy(System.String, System.Nullable`1[System.Int32], System.String) on controller Assignment1.Controllers.HomeController (Assignment1).
+2025-12-04 01:13:13.500 -05:00 [INF] Executing action method Assignment1.Controllers.HomeController.Privacy (Assignment1) - Validation state: "Valid"
+2025-12-04 01:13:13.509 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."CategoryId", c."Name"
+FROM "Categories" AS c
+2025-12-04 01:13:13.520 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name"
+FROM "Events" AS e
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+2025-12-04 01:13:13.529 -05:00 [INF] Executed action method Assignment1.Controllers.HomeController.Privacy (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 23.6622ms.
+2025-12-04 01:13:13.537 -05:00 [INF] Executing ViewResult, running view Privacy.
+2025-12-04 01:13:13.554 -05:00 [INF] Executed ViewResult - view Privacy executed in 16.8316ms.
+2025-12-04 01:13:13.561 -05:00 [INF] Executed action Assignment1.Controllers.HomeController.Privacy (Assignment1) in 62.4578ms
+2025-12-04 01:13:13.569 -05:00 [INF] Executed endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 01:13:13.574 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/ - 200 null text/html; charset=utf-8 123.3525ms
+2025-12-04 01:13:14.609 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Home/Index - null null
+2025-12-04 01:13:14.653 -05:00 [INF] Executing endpoint 'Assignment1.Controllers.HomeController.Index (Assignment1)'
+2025-12-04 01:13:14.676 -05:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Assignment1.Controllers.HomeController (Assignment1).
+2025-12-04 01:13:14.693 -05:00 [INF] Executing action method Assignment1.Controllers.HomeController.Index (Assignment1) - Validation state: "Valid"
+2025-12-04 01:13:14.746 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__p_0
+LIMIT 1
+2025-12-04 01:13:14.863 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PurchasedEventId", p."EventId", p."GuestEmail", p."GuestName", p."PurchaseDate", p."Quantity", p."Rating", p."UserId", e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name"
+FROM "PurchasedEvents" AS p
+INNER JOIN "Events" AS e ON p."EventId" = e."EventId"
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+WHERE p."UserId" = @__userId_0
+ORDER BY e."StartTimeDate"
+2025-12-04 01:13:15.013 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name", p."PurchasedEventId", p."EventId", p."GuestEmail", p."GuestName", p."PurchaseDate", p."Quantity", p."Rating", p."UserId"
+FROM "Events" AS e
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+LEFT JOIN "PurchasedEvents" AS p ON e."EventId" = p."EventId"
+WHERE e."OrganizerId" = @__userId_0
+ORDER BY e."EventId", c."CategoryId"
+2025-12-04 01:13:15.037 -05:00 [INF] Executed action method Assignment1.Controllers.HomeController.Index (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 331.958ms.
+2025-12-04 01:13:15.050 -05:00 [INF] Executing ViewResult, running view Index.
+2025-12-04 01:13:15.090 -05:00 [INF] Executed ViewResult - view Index executed in 42.9125ms.
+2025-12-04 01:13:15.099 -05:00 [INF] Executed action Assignment1.Controllers.HomeController.Index (Assignment1) in 406.6792ms
+2025-12-04 01:13:15.107 -05:00 [INF] Executed endpoint 'Assignment1.Controllers.HomeController.Index (Assignment1)'
+2025-12-04 01:13:15.115 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Home/Index - 200 null text/html; charset=utf-8 506.694ms
+2025-12-04 01:13:15.136 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/profile-pictures/72a18d36-8f71-41e0-b9d7-56d8a79c5804.jpg - null null
+2025-12-04 01:13:15.163 -05:00 [INF] The file /profile-pictures/72a18d36-8f71-41e0-b9d7-56d8a79c5804.jpg was not modified
+2025-12-04 01:13:15.171 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/profile-pictures/72a18d36-8f71-41e0-b9d7-56d8a79c5804.jpg - 304 null image/jpeg 34.6536ms
+2025-12-04 01:13:18.568 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Events/Index - null null
+2025-12-04 01:13:18.613 -05:00 [INF] Executing endpoint 'Assignment1.Controllers.EventsController.Index (Assignment1)'
+2025-12-04 01:13:18.632 -05:00 [INF] Route matched with {action = "Index", controller = "Events", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Assignment1.Controllers.EventsController (Assignment1).
+2025-12-04 01:13:18.655 -05:00 [INF] Executing action method Assignment1.Controllers.EventsController.Index (Assignment1) - Validation state: "Valid"
+2025-12-04 01:13:18.703 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PurchasedEventId", p."EventId", p."GuestEmail", p."GuestName", p."PurchaseDate", p."Quantity", p."Rating", p."UserId", e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name"
+FROM "PurchasedEvents" AS p
+INNER JOIN "Events" AS e ON p."EventId" = e."EventId"
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+WHERE p."UserId" = @__userId_0
+2025-12-04 01:13:18.720 -05:00 [INF] Executed action method Assignment1.Controllers.EventsController.Index (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 57.9462ms.
+2025-12-04 01:13:18.738 -05:00 [INF] Executing ViewResult, running view Index.
+2025-12-04 01:13:18.773 -05:00 [INF] Executed ViewResult - view Index executed in 38.3172ms.
+2025-12-04 01:13:18.789 -05:00 [INF] Executed action Assignment1.Controllers.EventsController.Index (Assignment1) in 135.1913ms
+2025-12-04 01:13:18.799 -05:00 [INF] Executed endpoint 'Assignment1.Controllers.EventsController.Index (Assignment1)'
+2025-12-04 01:13:18.809 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Events/Index - 200 null text/html; charset=utf-8 240.4357ms
+2025-12-04 01:13:20.488 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/ - null null
+2025-12-04 01:13:20.513 -05:00 [INF] Executing endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 01:13:20.529 -05:00 [INF] Route matched with {action = "Privacy", controller = "Home", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Privacy(System.String, System.Nullable`1[System.Int32], System.String) on controller Assignment1.Controllers.HomeController (Assignment1).
+2025-12-04 01:13:20.550 -05:00 [INF] Executing action method Assignment1.Controllers.HomeController.Privacy (Assignment1) - Validation state: "Valid"
+2025-12-04 01:13:20.569 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."CategoryId", c."Name"
+FROM "Categories" AS c
+2025-12-04 01:13:20.595 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name"
+FROM "Events" AS e
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+2025-12-04 01:13:20.615 -05:00 [INF] Executed action method Assignment1.Controllers.HomeController.Privacy (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 50.951ms.
+2025-12-04 01:13:20.636 -05:00 [INF] Executing ViewResult, running view Privacy.
+2025-12-04 01:13:20.653 -05:00 [INF] Executed ViewResult - view Privacy executed in 17.0391ms.
+2025-12-04 01:13:20.667 -05:00 [INF] Executed action Assignment1.Controllers.HomeController.Privacy (Assignment1) in 117.3896ms
+2025-12-04 01:13:20.675 -05:00 [INF] Executed endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 01:13:20.682 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/ - 200 null text/html; charset=utf-8 193.747ms
+2025-12-04 01:13:32.086 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5130/Identity/Account/Logout?returnUrl=%2FHome%2FIndex - application/x-www-form-urlencoded 225
+2025-12-04 01:13:32.118 -05:00 [INF] Executing endpoint '/Account/Logout'
+2025-12-04 01:13:32.145 -05:00 [INF] Route matched with {page = "/Account/Logout", area = "Identity", action = "", controller = ""}. Executing page /Account/Logout
+2025-12-04 01:13:32.178 -05:00 [INF] Executing handler method Assignment1.Areas.Identity.Pages.Account.LogoutModel.OnPost - ModelState is "Valid"
+2025-12-04 01:13:32.194 -05:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-12-04 01:13:32.205 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-12-04 01:13:32.214 -05:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-12-04 01:13:32.224 -05:00 [INF] User logged out.
+2025-12-04 01:13:32.230 -05:00 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2025-12-04 01:13:32.241 -05:00 [INF] Executing LocalRedirectResult, redirecting to /Home/Index.
+2025-12-04 01:13:32.250 -05:00 [INF] Executed page /Account/Logout in 89.7557ms
+2025-12-04 01:13:32.259 -05:00 [INF] Executed endpoint '/Account/Logout'
+2025-12-04 01:13:32.266 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5130/Identity/Account/Logout?returnUrl=%2FHome%2FIndex - 302 0 null 179.8717ms
+2025-12-04 01:13:32.284 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Home/Index - null null
+2025-12-04 01:13:32.298 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-04 01:13:32.307 -05:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-12-04 01:13:32.314 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Home/Index - 302 0 null 30.3288ms
+2025-12-04 01:13:32.326 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Identity/Account/Login?ReturnUrl=%2FHome%2FIndex - null null
+2025-12-04 01:13:32.337 -05:00 [INF] Executing endpoint '/Account/Login'
+2025-12-04 01:13:32.343 -05:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-12-04 01:13:32.348 -05:00 [INF] Executing handler method Assignment1.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2025-12-04 01:13:32.353 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-12-04 01:13:32.359 -05:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-12-04 01:13:32.364 -05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-12-04 01:13:32.367 -05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-12-04 01:13:32.376 -05:00 [INF] Executed page /Account/Login in 29.0989ms
+2025-12-04 01:13:32.383 -05:00 [INF] Executed endpoint '/Account/Login'
+2025-12-04 01:13:32.387 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Identity/Account/Login?ReturnUrl=%2FHome%2FIndex - 200 null text/html; charset=utf-8 61.2711ms
+2025-12-04 01:13:38.161 -05:00 [INF] Application is shutting down...
+2025-12-04 01:24:40.041 -05:00 [INF] User profile is available. Using 'C:\Users\olpin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-04 01:24:43.344 -05:00 [INF] Executed DbCommand (166ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-12-04 01:24:43.716 -05:00 [INF] Executed DbCommand (17ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-12-04 01:24:43.732 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-12-04 01:24:43.802 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-12-04 01:24:44.756 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-12-04 01:24:44.968 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-12-04 01:24:45.076 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-12-04 01:24:45.121 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-12-04 01:24:45.152 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-12-04 01:24:45.175 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-12-04 01:24:45.223 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-12-04 01:24:45.268 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-12-04 01:24:45.624 -05:00 [INF] Now listening on: http://localhost:5130
+2025-12-04 01:24:45.639 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-04 01:24:45.647 -05:00 [INF] Hosting environment: Development
+2025-12-04 01:24:45.661 -05:00 [INF] Content root path: C:\Users\olpin\Downloads\Assignment1 (2)\Assignment1\Assignment1
+2025-12-04 01:24:45.805 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/ - null null
+2025-12-04 01:24:45.848 -05:00 [WRN] Failed to determine the https port for redirect.
+2025-12-04 01:24:45.992 -05:00 [INF] Executing endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 01:24:46.057 -05:00 [INF] Route matched with {action = "Privacy", controller = "Home", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Privacy(System.String, System.Nullable`1[System.Int32], System.String) on controller Assignment1.Controllers.HomeController (Assignment1).
+2025-12-04 01:24:46.124 -05:00 [INF] Executing action method Assignment1.Controllers.HomeController.Privacy (Assignment1) - Validation state: "Valid"
+2025-12-04 01:24:46.397 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."CategoryId", c."Name"
+FROM "Categories" AS c
+2025-12-04 01:24:46.770 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name"
+FROM "Events" AS e
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+2025-12-04 01:24:46.984 -05:00 [INF] Executed action method Assignment1.Controllers.HomeController.Privacy (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 838.8768ms.
+2025-12-04 01:24:47.055 -05:00 [INF] Executing ViewResult, running view Privacy.
+2025-12-04 01:24:47.667 -05:00 [INF] Executed ViewResult - view Privacy executed in 622.0144ms.
+2025-12-04 01:24:47.693 -05:00 [INF] Executed action Assignment1.Controllers.HomeController.Privacy (Assignment1) in 1619.6671ms
+2025-12-04 01:24:47.716 -05:00 [INF] Executed endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 01:24:47.790 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/ - 200 null text/html; charset=utf-8 1990.1663ms
+2025-12-04 01:25:04.354 -05:00 [INF] Application is shutting down...
+2025-12-04 01:27:48.417 -05:00 [INF] User profile is available. Using 'C:\Users\olpin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-04 01:27:50.378 -05:00 [INF] Executed DbCommand (87ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-12-04 01:27:50.536 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-12-04 01:27:50.548 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-12-04 01:27:50.583 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-12-04 01:27:50.653 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-12-04 01:27:50.709 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-12-04 01:27:50.736 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-12-04 01:27:50.751 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-12-04 01:27:50.762 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-12-04 01:27:50.775 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-12-04 01:27:50.785 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-12-04 01:27:50.798 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-12-04 01:27:50.902 -05:00 [INF] Now listening on: http://localhost:5130
+2025-12-04 01:27:50.910 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-04 01:27:50.914 -05:00 [INF] Hosting environment: Development
+2025-12-04 01:27:50.918 -05:00 [INF] Content root path: C:\Users\olpin\Downloads\Assignment1 (2)\Assignment1\Assignment1
+2025-12-04 01:27:51.338 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/ - null null
+2025-12-04 01:27:51.361 -05:00 [WRN] Failed to determine the https port for redirect.
+2025-12-04 01:27:51.465 -05:00 [INF] Executing endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 01:27:51.513 -05:00 [INF] Route matched with {action = "Privacy", controller = "Home", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Privacy(System.String, System.Nullable`1[System.Int32], System.String) on controller Assignment1.Controllers.HomeController (Assignment1).
+2025-12-04 01:27:51.565 -05:00 [INF] Executing action method Assignment1.Controllers.HomeController.Privacy (Assignment1) - Validation state: "Valid"
+2025-12-04 01:27:51.753 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."CategoryId", c."Name"
+FROM "Categories" AS c
+2025-12-04 01:27:51.979 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name"
+FROM "Events" AS e
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+2025-12-04 01:27:52.106 -05:00 [INF] Executed action method Assignment1.Controllers.HomeController.Privacy (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 524.2011ms.
+2025-12-04 01:27:52.154 -05:00 [INF] Executing ViewResult, running view Privacy.
+2025-12-04 01:27:52.554 -05:00 [INF] Executed ViewResult - view Privacy executed in 400.9495ms.
+2025-12-04 01:27:52.571 -05:00 [INF] Executed action Assignment1.Controllers.HomeController.Privacy (Assignment1) in 1047.9931ms
+2025-12-04 01:27:52.581 -05:00 [INF] Executed endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 01:27:52.616 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/ - 200 null text/html; charset=utf-8 1282.9158ms
+2025-12-04 01:27:56.209 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Identity/Account/Login - null null
+2025-12-04 01:27:56.232 -05:00 [INF] Executing endpoint '/Account/Login'
+2025-12-04 01:27:56.326 -05:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-12-04 01:27:56.400 -05:00 [INF] Executing handler method Assignment1.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2025-12-04 01:27:56.421 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-12-04 01:27:56.434 -05:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-12-04 01:27:56.449 -05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-12-04 01:27:56.454 -05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-12-04 01:27:56.579 -05:00 [INF] Executed page /Account/Login in 243.6046ms
+2025-12-04 01:27:56.587 -05:00 [INF] Executed endpoint '/Account/Login'
+2025-12-04 01:27:56.593 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Identity/Account/Login - 200 null text/html; charset=utf-8 384.07ms
+2025-12-04 01:28:02.059 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5130/Identity/Account/Login - application/x-www-form-urlencoded 283
+2025-12-04 01:28:02.107 -05:00 [INF] Executing endpoint '/Account/Login'
+2025-12-04 01:28:02.120 -05:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-12-04 01:28:02.200 -05:00 [INF] Executing handler method Assignment1.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2025-12-04 01:28:02.261 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-12-04 01:28:02.538 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ClaimType", a."ClaimValue", a."UserId"
+FROM "AspNetUserClaims" AS a
+WHERE a."UserId" = @__user_Id_0
+2025-12-04 01:28:02.609 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "AspNetRoles" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+2025-12-04 01:28:02.631 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-12-04 01:28:02.664 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."ClaimType", a."ClaimValue"
+FROM "AspNetRoleClaims" AS a
+WHERE a."RoleId" = @__role_Id_0
+2025-12-04 01:28:02.693 -05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-12-04 01:28:02.705 -05:00 [INF] User logged in.
+2025-12-04 01:28:02.718 -05:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2025-12-04 01:28:02.736 -05:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2025-12-04 01:28:02.742 -05:00 [INF] Executed page /Account/Login in 610.5762ms
+2025-12-04 01:28:02.748 -05:00 [INF] Executed endpoint '/Account/Login'
+2025-12-04 01:28:02.755 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5130/Identity/Account/Login - 302 0 null 695.788ms
+2025-12-04 01:28:02.772 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/ - null null
+2025-12-04 01:28:02.793 -05:00 [INF] Executing endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 01:28:02.800 -05:00 [INF] Route matched with {action = "Privacy", controller = "Home", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Privacy(System.String, System.Nullable`1[System.Int32], System.String) on controller Assignment1.Controllers.HomeController (Assignment1).
+2025-12-04 01:28:02.811 -05:00 [INF] Executing action method Assignment1.Controllers.HomeController.Privacy (Assignment1) - Validation state: "Valid"
+2025-12-04 01:28:02.821 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."CategoryId", c."Name"
+FROM "Categories" AS c
+2025-12-04 01:28:02.833 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name"
+FROM "Events" AS e
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+2025-12-04 01:28:02.844 -05:00 [INF] Executed action method Assignment1.Controllers.HomeController.Privacy (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 26.4681ms.
+2025-12-04 01:28:02.851 -05:00 [INF] Executing ViewResult, running view Privacy.
+2025-12-04 01:28:02.882 -05:00 [INF] Executed ViewResult - view Privacy executed in 31.0377ms.
+2025-12-04 01:28:02.892 -05:00 [INF] Executed action Assignment1.Controllers.HomeController.Privacy (Assignment1) in 82.4889ms
+2025-12-04 01:28:02.903 -05:00 [INF] Executed endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 01:28:02.912 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/ - 200 null text/html; charset=utf-8 140.446ms
+2025-12-04 01:28:04.893 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/MyAnalytics - null null
+2025-12-04 01:28:04.932 -05:00 [INF] Executing endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.MyAnalytics (Assignment1)'
+2025-12-04 01:28:04.949 -05:00 [INF] Route matched with {area = "AdminOrganizer", action = "MyAnalytics", controller = "Analytics", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MyAnalytics() on controller Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController (Assignment1).
+2025-12-04 01:28:04.969 -05:00 [INF] Executing action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.MyAnalytics (Assignment1) - Validation state: "Valid"
+2025-12-04 01:28:04.980 -05:00 [INF] Executed action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.MyAnalytics (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.8838ms.
+2025-12-04 01:28:04.992 -05:00 [INF] Executing ViewResult, running view MyAnalytics.
+2025-12-04 01:28:05.016 -05:00 [INF] Executed ViewResult - view MyAnalytics executed in 25.9528ms.
+2025-12-04 01:28:05.030 -05:00 [INF] Executed action Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.MyAnalytics (Assignment1) in 63.381ms
+2025-12-04 01:28:05.043 -05:00 [INF] Executed endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.MyAnalytics (Assignment1)'
+2025-12-04 01:28:05.058 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/MyAnalytics - 200 null text/html; charset=utf-8 164.116ms
+2025-12-04 01:28:05.082 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/TicketSalesByCategory - null null
+2025-12-04 01:28:05.108 -05:00 [INF] Executing endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TicketSalesByCategory (Assignment1)'
+2025-12-04 01:28:05.122 -05:00 [INF] Route matched with {area = "AdminOrganizer", action = "TicketSalesByCategory", controller = "Analytics", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TicketSalesByCategory() on controller Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController (Assignment1).
+2025-12-04 01:28:05.129 -05:00 [INF] Executing action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TicketSalesByCategory (Assignment1) - Validation state: "Valid"
+2025-12-04 01:28:05.218 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Name" AS "Category", (
+    SELECT count(*)::int
+    FROM "PurchasedEvents" AS p
+    INNER JOIN "Events" AS e ON p."EventId" = e."EventId"
+    WHERE e."CategoryId" = c."CategoryId") AS "TicketsSold"
+FROM "Categories" AS c
+2025-12-04 01:28:05.230 -05:00 [INF] Executed action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TicketSalesByCategory (Assignment1), returned result Microsoft.AspNetCore.Mvc.JsonResult in 94.4958ms.
+2025-12-04 01:28:05.239 -05:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[Assignment1.Areas.AdminOrganizer.Models.TicketSalesByCategoryModel, Assignment1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-04 01:28:05.457 -05:00 [INF] Executed action Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TicketSalesByCategory (Assignment1) in 328.264ms
+2025-12-04 01:28:05.463 -05:00 [INF] Executed endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TicketSalesByCategory (Assignment1)'
+2025-12-04 01:28:05.468 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/TicketSalesByCategory - 200 null application/json; charset=utf-8 386.061ms
+2025-12-04 01:28:05.482 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/RevenuePerMonth - null null
+2025-12-04 01:28:05.499 -05:00 [INF] Executing endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.RevenuePerMonth (Assignment1)'
+2025-12-04 01:28:05.516 -05:00 [INF] Route matched with {area = "AdminOrganizer", action = "RevenuePerMonth", controller = "Analytics", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RevenuePerMonth() on controller Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController (Assignment1).
+2025-12-04 01:28:05.528 -05:00 [INF] Executing action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.RevenuePerMonth (Assignment1) - Validation state: "Valid"
+2025-12-04 01:28:05.744 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p0."Key", (
+    SELECT COALESCE(sum(p1."Quantity"::numeric * e."TicketPrice"), 0.0)
+    FROM (
+        SELECT p2."EventId", p2."Quantity", date_part('month', p2."PurchaseDate" AT TIME ZONE 'UTC')::int AS "Key"
+        FROM "PurchasedEvents" AS p2
+    ) AS p1
+    INNER JOIN "Events" AS e ON p1."EventId" = e."EventId"
+    WHERE p0."Key" = p1."Key" OR (p0."Key" IS NULL AND p1."Key" IS NULL))
+FROM (
+    SELECT date_part('month', p."PurchaseDate" AT TIME ZONE 'UTC')::int AS "Key"
+    FROM "PurchasedEvents" AS p
+) AS p0
+GROUP BY p0."Key"
+2025-12-04 01:28:05.756 -05:00 [INF] Executed action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.RevenuePerMonth (Assignment1), returned result Microsoft.AspNetCore.Mvc.JsonResult in 220.3204ms.
+2025-12-04 01:28:05.763 -05:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[Assignment1.Areas.AdminOrganizer.Models.RevenuePerMonthModel, Assignment1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-04 01:28:05.795 -05:00 [INF] Executed action Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.RevenuePerMonth (Assignment1) in 267.6673ms
+2025-12-04 01:28:05.803 -05:00 [INF] Executed endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.RevenuePerMonth (Assignment1)'
+2025-12-04 01:28:05.807 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/RevenuePerMonth - 200 null application/json; charset=utf-8 324.2493ms
+2025-12-04 01:28:05.824 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/TopEvents - null null
+2025-12-04 01:28:05.836 -05:00 [INF] Executing endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TopEvents (Assignment1)'
+2025-12-04 01:28:05.848 -05:00 [INF] Route matched with {area = "AdminOrganizer", action = "TopEvents", controller = "Analytics", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TopEvents() on controller Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController (Assignment1).
+2025-12-04 01:28:05.857 -05:00 [INF] Executing action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TopEvents (Assignment1) - Validation state: "Valid"
+2025-12-04 01:28:05.915 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Title" AS "Name", (
+    SELECT COALESCE(sum(p0."Quantity"), 0)::int
+    FROM "PurchasedEvents" AS p0
+    WHERE e."EventId" = p0."EventId") AS "TicketsSold", (
+    SELECT COALESCE(sum(p1."Quantity"::numeric * e."TicketPrice"), 0.0)
+    FROM "PurchasedEvents" AS p1
+    WHERE e."EventId" = p1."EventId") AS "Revenue"
+FROM "Events" AS e
+ORDER BY (
+    SELECT COALESCE(sum(p."Quantity"), 0)::int
+    FROM "PurchasedEvents" AS p
+    WHERE e."EventId" = p."EventId") DESC
+LIMIT @__p_0
+2025-12-04 01:28:05.925 -05:00 [INF] Executed action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TopEvents (Assignment1), returned result Microsoft.AspNetCore.Mvc.JsonResult in 62.5925ms.
+2025-12-04 01:28:05.934 -05:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[Assignment1.Areas.AdminOrganizer.Models.TopEventModel, Assignment1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-04 01:28:05.948 -05:00 [INF] Executed action Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TopEvents (Assignment1) in 91.4634ms
+2025-12-04 01:28:05.955 -05:00 [INF] Executed endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TopEvents (Assignment1)'
+2025-12-04 01:28:05.960 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/TopEvents - 200 null application/json; charset=utf-8 135.749ms
+2025-12-04 01:28:06.344 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/ - null null
+2025-12-04 01:28:06.360 -05:00 [INF] Executing endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 01:28:06.364 -05:00 [INF] Route matched with {action = "Privacy", controller = "Home", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Privacy(System.String, System.Nullable`1[System.Int32], System.String) on controller Assignment1.Controllers.HomeController (Assignment1).
+2025-12-04 01:28:06.378 -05:00 [INF] Executing action method Assignment1.Controllers.HomeController.Privacy (Assignment1) - Validation state: "Valid"
+2025-12-04 01:28:06.387 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."CategoryId", c."Name"
+FROM "Categories" AS c
+2025-12-04 01:28:06.401 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name"
+FROM "Events" AS e
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+2025-12-04 01:28:06.410 -05:00 [INF] Executed action method Assignment1.Controllers.HomeController.Privacy (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 24.9968ms.
+2025-12-04 01:28:06.417 -05:00 [INF] Executing ViewResult, running view Privacy.
+2025-12-04 01:28:06.429 -05:00 [INF] Executed ViewResult - view Privacy executed in 11.1725ms.
+2025-12-04 01:28:06.438 -05:00 [INF] Executed action Assignment1.Controllers.HomeController.Privacy (Assignment1) in 61.0502ms
+2025-12-04 01:28:06.448 -05:00 [INF] Executed endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 01:28:06.456 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/ - 200 null text/html; charset=utf-8 112.2376ms
+2025-12-04 01:28:08.105 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Events/Index - null null
+2025-12-04 01:28:08.138 -05:00 [INF] Executing endpoint 'Assignment1.Controllers.EventsController.Index (Assignment1)'
+2025-12-04 01:28:08.160 -05:00 [INF] Route matched with {action = "Index", controller = "Events", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Assignment1.Controllers.EventsController (Assignment1).
+2025-12-04 01:28:08.178 -05:00 [INF] Executing action method Assignment1.Controllers.EventsController.Index (Assignment1) - Validation state: "Valid"
+2025-12-04 01:28:08.256 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PurchasedEventId", p."EventId", p."GuestEmail", p."GuestName", p."PurchaseDate", p."Quantity", p."Rating", p."UserId", e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name"
+FROM "PurchasedEvents" AS p
+INNER JOIN "Events" AS e ON p."EventId" = e."EventId"
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+WHERE p."UserId" = @__userId_0
+2025-12-04 01:28:08.267 -05:00 [INF] Executed action method Assignment1.Controllers.EventsController.Index (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 85.0558ms.
+2025-12-04 01:28:08.277 -05:00 [INF] Executing ViewResult, running view Index.
+2025-12-04 01:28:08.297 -05:00 [INF] Executed ViewResult - view Index executed in 22.3023ms.
+2025-12-04 01:28:08.306 -05:00 [INF] Executed action Assignment1.Controllers.EventsController.Index (Assignment1) in 129.7033ms
+2025-12-04 01:28:08.320 -05:00 [INF] Executed endpoint 'Assignment1.Controllers.EventsController.Index (Assignment1)'
+2025-12-04 01:28:08.327 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Events/Index - 200 null text/html; charset=utf-8 221.8112ms
+2025-12-04 01:28:09.396 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Home/Index - null null
+2025-12-04 01:28:09.412 -05:00 [INF] Executing endpoint 'Assignment1.Controllers.HomeController.Index (Assignment1)'
+2025-12-04 01:28:09.427 -05:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Assignment1.Controllers.HomeController (Assignment1).
+2025-12-04 01:28:09.443 -05:00 [INF] Executing action method Assignment1.Controllers.HomeController.Index (Assignment1) - Validation state: "Valid"
+2025-12-04 01:28:09.491 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__p_0
+LIMIT 1
+2025-12-04 01:28:09.562 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PurchasedEventId", p."EventId", p."GuestEmail", p."GuestName", p."PurchaseDate", p."Quantity", p."Rating", p."UserId", e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name"
+FROM "PurchasedEvents" AS p
+INNER JOIN "Events" AS e ON p."EventId" = e."EventId"
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+WHERE p."UserId" = @__userId_0
+ORDER BY e."StartTimeDate"
+2025-12-04 01:28:09.665 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name", p."PurchasedEventId", p."EventId", p."GuestEmail", p."GuestName", p."PurchaseDate", p."Quantity", p."Rating", p."UserId"
+FROM "Events" AS e
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+LEFT JOIN "PurchasedEvents" AS p ON e."EventId" = p."EventId"
+WHERE e."OrganizerId" = @__userId_0
+ORDER BY e."EventId", c."CategoryId"
+2025-12-04 01:28:09.682 -05:00 [INF] Executed action method Assignment1.Controllers.HomeController.Index (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 227.6599ms.
+2025-12-04 01:28:09.694 -05:00 [INF] Executing ViewResult, running view Index.
+2025-12-04 01:28:09.736 -05:00 [INF] Executed ViewResult - view Index executed in 44.2673ms.
+2025-12-04 01:28:09.756 -05:00 [INF] Executed action Assignment1.Controllers.HomeController.Index (Assignment1) in 313.1774ms
+2025-12-04 01:28:09.772 -05:00 [INF] Executed endpoint 'Assignment1.Controllers.HomeController.Index (Assignment1)'
+2025-12-04 01:28:09.785 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Home/Index - 200 null text/html; charset=utf-8 388.8989ms
+2025-12-04 01:28:13.709 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5130/Identity/Account/Logout?returnUrl=%2FHome%2FIndex - application/x-www-form-urlencoded 225
+2025-12-04 01:28:13.733 -05:00 [INF] Executing endpoint '/Account/Logout'
+2025-12-04 01:28:13.754 -05:00 [INF] Route matched with {page = "/Account/Logout", area = "Identity", action = "", controller = ""}. Executing page /Account/Logout
+2025-12-04 01:28:13.776 -05:00 [INF] Executing handler method Assignment1.Areas.Identity.Pages.Account.LogoutModel.OnPost - ModelState is "Valid"
+2025-12-04 01:28:13.786 -05:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-12-04 01:28:13.793 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-12-04 01:28:13.797 -05:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-12-04 01:28:13.804 -05:00 [INF] User logged out.
+2025-12-04 01:28:13.808 -05:00 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2025-12-04 01:28:13.815 -05:00 [INF] Executing LocalRedirectResult, redirecting to /Home/Index.
+2025-12-04 01:28:13.820 -05:00 [INF] Executed page /Account/Logout in 58.6692ms
+2025-12-04 01:28:13.824 -05:00 [INF] Executed endpoint '/Account/Logout'
+2025-12-04 01:28:13.828 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5130/Identity/Account/Logout?returnUrl=%2FHome%2FIndex - 302 0 null 118.794ms
+2025-12-04 01:28:13.839 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Home/Index - null null
+2025-12-04 01:28:13.852 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-04 01:28:13.860 -05:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-12-04 01:28:13.864 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Home/Index - 302 0 null 24.263ms
+2025-12-04 01:28:13.875 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Identity/Account/Login?ReturnUrl=%2FHome%2FIndex - null null
+2025-12-04 01:28:13.883 -05:00 [INF] Executing endpoint '/Account/Login'
+2025-12-04 01:28:13.888 -05:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-12-04 01:28:13.893 -05:00 [INF] Executing handler method Assignment1.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2025-12-04 01:28:13.897 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-12-04 01:28:13.903 -05:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-12-04 01:28:13.908 -05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-12-04 01:28:13.911 -05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-12-04 01:28:13.919 -05:00 [INF] Executed page /Account/Login in 27.3376ms
+2025-12-04 01:28:13.925 -05:00 [INF] Executed endpoint '/Account/Login'
+2025-12-04 01:28:13.931 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Identity/Account/Login?ReturnUrl=%2FHome%2FIndex - 200 null text/html; charset=utf-8 56.1758ms
+2025-12-04 01:28:17.888 -05:00 [INF] Application is shutting down...
+2025-12-04 01:37:45.321 -05:00 [INF] User profile is available. Using 'C:\Users\olpin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-04 01:37:47.111 -05:00 [INF] Executed DbCommand (91ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-12-04 01:37:47.258 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-12-04 01:37:47.270 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-12-04 01:37:47.304 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-12-04 01:37:47.374 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-12-04 01:37:47.429 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-12-04 01:37:47.458 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-12-04 01:37:47.474 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-12-04 01:37:47.485 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-12-04 01:37:47.495 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-12-04 01:37:47.504 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-12-04 01:37:47.513 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?', @__p_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-12-04 01:37:47.616 -05:00 [INF] Now listening on: http://localhost:5130
+2025-12-04 01:37:47.626 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-04 01:37:47.630 -05:00 [INF] Hosting environment: Development
+2025-12-04 01:37:47.634 -05:00 [INF] Content root path: C:\Users\olpin\Downloads\Assignment1 (2)\Assignment1\Assignment1
+2025-12-04 01:37:48.192 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/ - null null
+2025-12-04 01:37:48.215 -05:00 [WRN] Failed to determine the https port for redirect.
+2025-12-04 01:37:48.328 -05:00 [INF] Executing endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 01:37:48.386 -05:00 [INF] Route matched with {action = "Privacy", controller = "Home", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Privacy(System.String, System.Nullable`1[System.Int32], System.String) on controller Assignment1.Controllers.HomeController (Assignment1).
+2025-12-04 01:37:48.432 -05:00 [INF] Executing action method Assignment1.Controllers.HomeController.Privacy (Assignment1) - Validation state: "Valid"
+2025-12-04 01:37:48.615 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."CategoryId", c."Name"
+FROM "Categories" AS c
+2025-12-04 01:37:48.817 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name"
+FROM "Events" AS e
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+2025-12-04 01:37:48.903 -05:00 [INF] Executed action method Assignment1.Controllers.HomeController.Privacy (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 455.8565ms.
+2025-12-04 01:37:48.939 -05:00 [INF] Executing ViewResult, running view Privacy.
+2025-12-04 01:37:49.215 -05:00 [INF] Executed ViewResult - view Privacy executed in 277.075ms.
+2025-12-04 01:37:49.232 -05:00 [INF] Executed action Assignment1.Controllers.HomeController.Privacy (Assignment1) in 832.0555ms
+2025-12-04 01:37:49.249 -05:00 [INF] Executed endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 01:37:49.316 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/ - 200 null text/html; charset=utf-8 1127.7189ms
+2025-12-04 01:37:54.952 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Home/Index - null null
+2025-12-04 01:37:54.992 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-04 01:37:55.012 -05:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-12-04 01:37:55.022 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Home/Index - 302 0 null 70.184ms
+2025-12-04 01:37:55.049 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Identity/Account/Login?ReturnUrl=%2FHome%2FIndex - null null
+2025-12-04 01:37:55.068 -05:00 [INF] Executing endpoint '/Account/Login'
+2025-12-04 01:37:55.105 -05:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-12-04 01:37:55.148 -05:00 [INF] Executing handler method Assignment1.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2025-12-04 01:37:55.162 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-12-04 01:37:55.171 -05:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-12-04 01:37:55.187 -05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-12-04 01:37:55.192 -05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-12-04 01:37:55.313 -05:00 [INF] Executed page /Account/Login in 200.5907ms
+2025-12-04 01:37:55.329 -05:00 [INF] Executed endpoint '/Account/Login'
+2025-12-04 01:37:55.336 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Identity/Account/Login?ReturnUrl=%2FHome%2FIndex - 200 null text/html; charset=utf-8 287.2832ms
+2025-12-04 01:37:57.326 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5130/Identity/Account/Login?ReturnUrl=%2FHome%2FIndex - application/x-www-form-urlencoded 261
+2025-12-04 01:37:57.352 -05:00 [INF] Executing endpoint '/Account/Login'
+2025-12-04 01:37:57.360 -05:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-12-04 01:37:57.430 -05:00 [INF] Executing handler method Assignment1.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2025-12-04 01:37:57.492 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-12-04 01:37:57.779 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ClaimType", a."ClaimValue", a."UserId"
+FROM "AspNetUserClaims" AS a
+WHERE a."UserId" = @__user_Id_0
+2025-12-04 01:37:57.847 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "AspNetRoles" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+2025-12-04 01:37:57.873 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-12-04 01:37:57.903 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."ClaimType", a."ClaimValue"
+FROM "AspNetRoleClaims" AS a
+WHERE a."RoleId" = @__role_Id_0
+2025-12-04 01:37:57.928 -05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-12-04 01:37:57.939 -05:00 [INF] User logged in.
+2025-12-04 01:37:57.952 -05:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2025-12-04 01:37:57.970 -05:00 [INF] Executing LocalRedirectResult, redirecting to /Home/Index.
+2025-12-04 01:37:57.978 -05:00 [INF] Executed page /Account/Login in 613.3178ms
+2025-12-04 01:37:57.984 -05:00 [INF] Executed endpoint '/Account/Login'
+2025-12-04 01:37:57.989 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5130/Identity/Account/Login?ReturnUrl=%2FHome%2FIndex - 302 0 null 662.9118ms
+2025-12-04 01:37:58.005 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Home/Index - null null
+2025-12-04 01:37:58.033 -05:00 [INF] Executing endpoint 'Assignment1.Controllers.HomeController.Index (Assignment1)'
+2025-12-04 01:37:58.048 -05:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Assignment1.Controllers.HomeController (Assignment1).
+2025-12-04 01:37:58.058 -05:00 [INF] Executing action method Assignment1.Controllers.HomeController.Index (Assignment1) - Validation state: "Valid"
+2025-12-04 01:37:58.092 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__p_0
+LIMIT 1
+2025-12-04 01:37:58.174 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PurchasedEventId", p."EventId", p."GuestEmail", p."GuestName", p."PurchaseDate", p."Quantity", p."Rating", p."UserId", e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name"
+FROM "PurchasedEvents" AS p
+INNER JOIN "Events" AS e ON p."EventId" = e."EventId"
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+WHERE p."UserId" = @__userId_0
+ORDER BY e."StartTimeDate"
+2025-12-04 01:37:58.266 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name", p."PurchasedEventId", p."EventId", p."GuestEmail", p."GuestName", p."PurchaseDate", p."Quantity", p."Rating", p."UserId"
+FROM "Events" AS e
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+LEFT JOIN "PurchasedEvents" AS p ON e."EventId" = p."EventId"
+WHERE e."OrganizerId" = @__userId_0
+ORDER BY e."EventId", c."CategoryId"
+2025-12-04 01:37:58.280 -05:00 [INF] Executed action method Assignment1.Controllers.HomeController.Index (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 214.8376ms.
+2025-12-04 01:37:58.294 -05:00 [INF] Executing ViewResult, running view Index.
+2025-12-04 01:37:58.367 -05:00 [INF] Executed ViewResult - view Index executed in 76.7218ms.
+2025-12-04 01:37:58.386 -05:00 [INF] Executed action Assignment1.Controllers.HomeController.Index (Assignment1) in 328.2276ms
+2025-12-04 01:37:58.415 -05:00 [INF] Executed endpoint 'Assignment1.Controllers.HomeController.Index (Assignment1)'
+2025-12-04 01:37:58.431 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Home/Index - 200 null text/html; charset=utf-8 425.4464ms
+2025-12-04 01:38:02.011 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/MyAnalytics - null null
+2025-12-04 01:38:02.040 -05:00 [INF] Executing endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.MyAnalytics (Assignment1)'
+2025-12-04 01:38:02.054 -05:00 [INF] Route matched with {area = "AdminOrganizer", action = "MyAnalytics", controller = "Analytics", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MyAnalytics() on controller Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController (Assignment1).
+2025-12-04 01:38:02.070 -05:00 [INF] Executing action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.MyAnalytics (Assignment1) - Validation state: "Valid"
+2025-12-04 01:38:02.079 -05:00 [INF] Executed action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.MyAnalytics (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4385ms.
+2025-12-04 01:38:02.087 -05:00 [INF] Executing ViewResult, running view MyAnalytics.
+2025-12-04 01:38:02.102 -05:00 [INF] Executed ViewResult - view MyAnalytics executed in 16.8358ms.
+2025-12-04 01:38:02.119 -05:00 [INF] Executed action Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.MyAnalytics (Assignment1) in 50.4944ms
+2025-12-04 01:38:02.136 -05:00 [INF] Executed endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.MyAnalytics (Assignment1)'
+2025-12-04 01:38:02.152 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/MyAnalytics - 200 null text/html; charset=utf-8 141.0189ms
+2025-12-04 01:38:02.183 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/TicketSalesByCategory - null null
+2025-12-04 01:38:02.210 -05:00 [INF] Executing endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TicketSalesByCategory (Assignment1)'
+2025-12-04 01:38:02.225 -05:00 [INF] Route matched with {area = "AdminOrganizer", action = "TicketSalesByCategory", controller = "Analytics", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TicketSalesByCategory() on controller Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController (Assignment1).
+2025-12-04 01:38:02.235 -05:00 [INF] Executing action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TicketSalesByCategory (Assignment1) - Validation state: "Valid"
+2025-12-04 01:38:02.314 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Name" AS "Category", (
+    SELECT count(*)::int
+    FROM "PurchasedEvents" AS p
+    INNER JOIN "Events" AS e ON p."EventId" = e."EventId"
+    WHERE e."CategoryId" = c."CategoryId") AS "TicketsSold"
+FROM "Categories" AS c
+2025-12-04 01:38:02.324 -05:00 [INF] Executed action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TicketSalesByCategory (Assignment1), returned result Microsoft.AspNetCore.Mvc.JsonResult in 83.936ms.
+2025-12-04 01:38:02.333 -05:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[Assignment1.Areas.AdminOrganizer.Models.TicketSalesByCategoryModel, Assignment1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-04 01:38:02.535 -05:00 [INF] Executed action Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TicketSalesByCategory (Assignment1) in 300.8168ms
+2025-12-04 01:38:02.542 -05:00 [INF] Executed endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TicketSalesByCategory (Assignment1)'
+2025-12-04 01:38:02.546 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/TicketSalesByCategory - 200 null application/json; charset=utf-8 363.2522ms
+2025-12-04 01:38:02.558 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/RevenuePerMonth - null null
+2025-12-04 01:38:02.568 -05:00 [INF] Executing endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.RevenuePerMonth (Assignment1)'
+2025-12-04 01:38:02.577 -05:00 [INF] Route matched with {area = "AdminOrganizer", action = "RevenuePerMonth", controller = "Analytics", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RevenuePerMonth() on controller Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController (Assignment1).
+2025-12-04 01:38:02.584 -05:00 [INF] Executing action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.RevenuePerMonth (Assignment1) - Validation state: "Valid"
+2025-12-04 01:38:02.764 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p0."Key", (
+    SELECT COALESCE(sum(p1."Quantity"::numeric * e."TicketPrice"), 0.0)
+    FROM (
+        SELECT p2."EventId", p2."Quantity", date_part('month', p2."PurchaseDate" AT TIME ZONE 'UTC')::int AS "Key"
+        FROM "PurchasedEvents" AS p2
+    ) AS p1
+    INNER JOIN "Events" AS e ON p1."EventId" = e."EventId"
+    WHERE p0."Key" = p1."Key" OR (p0."Key" IS NULL AND p1."Key" IS NULL))
+FROM (
+    SELECT date_part('month', p."PurchaseDate" AT TIME ZONE 'UTC')::int AS "Key"
+    FROM "PurchasedEvents" AS p
+) AS p0
+GROUP BY p0."Key"
+2025-12-04 01:38:02.773 -05:00 [INF] Executed action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.RevenuePerMonth (Assignment1), returned result Microsoft.AspNetCore.Mvc.JsonResult in 183.9568ms.
+2025-12-04 01:38:02.777 -05:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[Assignment1.Areas.AdminOrganizer.Models.RevenuePerMonthModel, Assignment1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-04 01:38:02.803 -05:00 [INF] Executed action Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.RevenuePerMonth (Assignment1) in 219.6094ms
+2025-12-04 01:38:02.809 -05:00 [INF] Executed endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.RevenuePerMonth (Assignment1)'
+2025-12-04 01:38:02.812 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/RevenuePerMonth - 200 null application/json; charset=utf-8 253.9168ms
+2025-12-04 01:38:02.823 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/TopEvents - null null
+2025-12-04 01:38:02.830 -05:00 [INF] Executing endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TopEvents (Assignment1)'
+2025-12-04 01:38:02.840 -05:00 [INF] Route matched with {area = "AdminOrganizer", action = "TopEvents", controller = "Analytics", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TopEvents() on controller Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController (Assignment1).
+2025-12-04 01:38:02.848 -05:00 [INF] Executing action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TopEvents (Assignment1) - Validation state: "Valid"
+2025-12-04 01:38:02.894 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Title" AS "Name", (
+    SELECT COALESCE(sum(p0."Quantity"), 0)::int
+    FROM "PurchasedEvents" AS p0
+    WHERE e."EventId" = p0."EventId") AS "TicketsSold", (
+    SELECT COALESCE(sum(p1."Quantity"::numeric * e."TicketPrice"), 0.0)
+    FROM "PurchasedEvents" AS p1
+    WHERE e."EventId" = p1."EventId") AS "Revenue"
+FROM "Events" AS e
+ORDER BY (
+    SELECT COALESCE(sum(p."Quantity"), 0)::int
+    FROM "PurchasedEvents" AS p
+    WHERE e."EventId" = p."EventId") DESC
+LIMIT @__p_0
+2025-12-04 01:38:02.906 -05:00 [INF] Executed action method Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TopEvents (Assignment1), returned result Microsoft.AspNetCore.Mvc.JsonResult in 52.2732ms.
+2025-12-04 01:38:02.914 -05:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[Assignment1.Areas.AdminOrganizer.Models.TopEventModel, Assignment1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-04 01:38:02.930 -05:00 [INF] Executed action Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TopEvents (Assignment1) in 81.6023ms
+2025-12-04 01:38:02.936 -05:00 [INF] Executed endpoint 'Assignment1.Areas.AdminOrganizer.Controllers.AnalyticsController.TopEvents (Assignment1)'
+2025-12-04 01:38:02.941 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/AdminOrganizer/Analytics/TopEvents - 200 null application/json; charset=utf-8 118.6421ms
+2025-12-04 01:38:04.557 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/ - null null
+2025-12-04 01:38:04.592 -05:00 [INF] Executing endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 01:38:04.604 -05:00 [INF] Route matched with {action = "Privacy", controller = "Home", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Privacy(System.String, System.Nullable`1[System.Int32], System.String) on controller Assignment1.Controllers.HomeController (Assignment1).
+2025-12-04 01:38:04.623 -05:00 [INF] Executing action method Assignment1.Controllers.HomeController.Privacy (Assignment1) - Validation state: "Valid"
+2025-12-04 01:38:04.637 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."CategoryId", c."Name"
+FROM "Categories" AS c
+2025-12-04 01:38:04.656 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name"
+FROM "Events" AS e
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+2025-12-04 01:38:04.674 -05:00 [INF] Executed action method Assignment1.Controllers.HomeController.Privacy (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 39.9298ms.
+2025-12-04 01:38:04.688 -05:00 [INF] Executing ViewResult, running view Privacy.
+2025-12-04 01:38:04.727 -05:00 [INF] Executed ViewResult - view Privacy executed in 38.8649ms.
+2025-12-04 01:38:04.740 -05:00 [INF] Executed action Assignment1.Controllers.HomeController.Privacy (Assignment1) in 118.7156ms
+2025-12-04 01:38:04.754 -05:00 [INF] Executed endpoint 'Assignment1.Controllers.HomeController.Privacy (Assignment1)'
+2025-12-04 01:38:04.767 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/ - 200 null text/html; charset=utf-8 210.77ms
+2025-12-04 01:38:07.260 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Home/Index - null null
+2025-12-04 01:38:07.288 -05:00 [INF] Executing endpoint 'Assignment1.Controllers.HomeController.Index (Assignment1)'
+2025-12-04 01:38:07.299 -05:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Assignment1.Controllers.HomeController (Assignment1).
+2025-12-04 01:38:07.308 -05:00 [INF] Executing action method Assignment1.Controllers.HomeController.Index (Assignment1) - Validation state: "Valid"
+2025-12-04 01:38:07.321 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__p_0
+LIMIT 1
+2025-12-04 01:38:07.345 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PurchasedEventId", p."EventId", p."GuestEmail", p."GuestName", p."PurchaseDate", p."Quantity", p."Rating", p."UserId", e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name"
+FROM "PurchasedEvents" AS p
+INNER JOIN "Events" AS e ON p."EventId" = e."EventId"
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+WHERE p."UserId" = @__userId_0
+ORDER BY e."StartTimeDate"
+2025-12-04 01:38:07.367 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name", p."PurchasedEventId", p."EventId", p."GuestEmail", p."GuestName", p."PurchaseDate", p."Quantity", p."Rating", p."UserId"
+FROM "Events" AS e
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+LEFT JOIN "PurchasedEvents" AS p ON e."EventId" = p."EventId"
+WHERE e."OrganizerId" = @__userId_0
+ORDER BY e."EventId", c."CategoryId"
+2025-12-04 01:38:07.383 -05:00 [INF] Executed action method Assignment1.Controllers.HomeController.Index (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 65.0551ms.
+2025-12-04 01:38:07.393 -05:00 [INF] Executing ViewResult, running view Index.
+2025-12-04 01:38:07.403 -05:00 [INF] Executed ViewResult - view Index executed in 10.2703ms.
+2025-12-04 01:38:07.411 -05:00 [INF] Executed action Assignment1.Controllers.HomeController.Index (Assignment1) in 103.3125ms
+2025-12-04 01:38:07.419 -05:00 [INF] Executed endpoint 'Assignment1.Controllers.HomeController.Index (Assignment1)'
+2025-12-04 01:38:07.426 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Home/Index - 200 null text/html; charset=utf-8 165.7054ms
+2025-12-04 01:38:10.951 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5130/Identity/Account/Logout?returnUrl=%2FHome%2FIndex - application/x-www-form-urlencoded 225
+2025-12-04 01:38:10.977 -05:00 [INF] Executing endpoint '/Account/Logout'
+2025-12-04 01:38:10.995 -05:00 [INF] Route matched with {page = "/Account/Logout", area = "Identity", action = "", controller = ""}. Executing page /Account/Logout
+2025-12-04 01:38:11.007 -05:00 [INF] Executing handler method Assignment1.Areas.Identity.Pages.Account.LogoutModel.OnPost - ModelState is "Valid"
+2025-12-04 01:38:11.021 -05:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-12-04 01:38:11.032 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-12-04 01:38:11.038 -05:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-12-04 01:38:11.049 -05:00 [INF] User logged out.
+2025-12-04 01:38:11.054 -05:00 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2025-12-04 01:38:11.065 -05:00 [INF] Executing LocalRedirectResult, redirecting to /Home/Index.
+2025-12-04 01:38:11.078 -05:00 [INF] Executed page /Account/Logout in 73.2651ms
+2025-12-04 01:38:11.093 -05:00 [INF] Executed endpoint '/Account/Logout'
+2025-12-04 01:38:11.106 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5130/Identity/Account/Logout?returnUrl=%2FHome%2FIndex - 302 0 null 154.6948ms
+2025-12-04 01:38:11.130 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Home/Index - null null
+2025-12-04 01:38:11.147 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-04 01:38:11.153 -05:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-12-04 01:38:11.161 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Home/Index - 302 0 null 30.918ms
+2025-12-04 01:38:11.180 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Identity/Account/Login?ReturnUrl=%2FHome%2FIndex - null null
+2025-12-04 01:38:11.188 -05:00 [INF] Executing endpoint '/Account/Login'
+2025-12-04 01:38:11.196 -05:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-12-04 01:38:11.202 -05:00 [INF] Executing handler method Assignment1.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2025-12-04 01:38:11.211 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-12-04 01:38:11.218 -05:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-12-04 01:38:11.223 -05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-12-04 01:38:11.227 -05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-12-04 01:38:11.235 -05:00 [INF] Executed page /Account/Login in 33.485ms
+2025-12-04 01:38:11.240 -05:00 [INF] Executed endpoint '/Account/Login'
+2025-12-04 01:38:11.244 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Identity/Account/Login?ReturnUrl=%2FHome%2FIndex - 200 null text/html; charset=utf-8 64.3303ms
+2025-12-04 01:38:18.334 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5130/Identity/Account/Login?ReturnUrl=%2FHome%2FIndex - application/x-www-form-urlencoded 269
+2025-12-04 01:38:18.357 -05:00 [INF] Executing endpoint '/Account/Login'
+2025-12-04 01:38:18.367 -05:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-12-04 01:38:18.380 -05:00 [INF] Executing handler method Assignment1.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2025-12-04 01:38:18.397 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-12-04 01:38:18.593 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ClaimType", a."ClaimValue", a."UserId"
+FROM "AspNetUserClaims" AS a
+WHERE a."UserId" = @__user_Id_0
+2025-12-04 01:38:18.605 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "AspNetRoles" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+2025-12-04 01:38:18.618 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-12-04 01:38:18.629 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."ClaimType", a."ClaimValue"
+FROM "AspNetRoleClaims" AS a
+WHERE a."RoleId" = @__role_Id_0
+2025-12-04 01:38:18.638 -05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-12-04 01:38:18.643 -05:00 [INF] User logged in.
+2025-12-04 01:38:18.647 -05:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2025-12-04 01:38:18.653 -05:00 [INF] Executing LocalRedirectResult, redirecting to /Home/Index.
+2025-12-04 01:38:18.659 -05:00 [INF] Executed page /Account/Login in 283.0935ms
+2025-12-04 01:38:18.664 -05:00 [INF] Executed endpoint '/Account/Login'
+2025-12-04 01:38:18.670 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5130/Identity/Account/Login?ReturnUrl=%2FHome%2FIndex - 302 0 null 335.2645ms
+2025-12-04 01:38:18.686 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Home/Index - null null
+2025-12-04 01:38:18.698 -05:00 [INF] Executing endpoint 'Assignment1.Controllers.HomeController.Index (Assignment1)'
+2025-12-04 01:38:18.703 -05:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Assignment1.Controllers.HomeController (Assignment1).
+2025-12-04 01:38:18.712 -05:00 [INF] Executing action method Assignment1.Controllers.HomeController.Index (Assignment1) - Validation state: "Valid"
+2025-12-04 01:38:18.719 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."DateOfBirth", a."Email", a."EmailConfirmed", a."FullName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfilePictureUrl", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__p_0
+LIMIT 1
+2025-12-04 01:38:18.729 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PurchasedEventId", p."EventId", p."GuestEmail", p."GuestName", p."PurchaseDate", p."Quantity", p."Rating", p."UserId", e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name"
+FROM "PurchasedEvents" AS p
+INNER JOIN "Events" AS e ON p."EventId" = e."EventId"
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+WHERE p."UserId" = @__userId_0
+ORDER BY e."StartTimeDate"
+2025-12-04 01:38:18.738 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."EventId", e."CategoryId", e."Description", e."OrganizerId", e."StartTimeDate", e."TicketPrice", e."TicketsAvailable", e."Title", c."CategoryId", c."Name", p."PurchasedEventId", p."EventId", p."GuestEmail", p."GuestName", p."PurchaseDate", p."Quantity", p."Rating", p."UserId"
+FROM "Events" AS e
+INNER JOIN "Categories" AS c ON e."CategoryId" = c."CategoryId"
+LEFT JOIN "PurchasedEvents" AS p ON e."EventId" = p."EventId"
+WHERE e."OrganizerId" = @__userId_0
+ORDER BY e."EventId", c."CategoryId"
+2025-12-04 01:38:18.746 -05:00 [INF] Executed action method Assignment1.Controllers.HomeController.Index (Assignment1), returned result Microsoft.AspNetCore.Mvc.ViewResult in 29.3715ms.
+2025-12-04 01:38:18.752 -05:00 [INF] Executing ViewResult, running view Index.
+2025-12-04 01:38:18.763 -05:00 [INF] Executed ViewResult - view Index executed in 11.0239ms.
+2025-12-04 01:38:18.770 -05:00 [INF] Executed action Assignment1.Controllers.HomeController.Index (Assignment1) in 58.4615ms
+2025-12-04 01:38:18.778 -05:00 [INF] Executed endpoint 'Assignment1.Controllers.HomeController.Index (Assignment1)'
+2025-12-04 01:38:18.784 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Home/Index - 200 null text/html; charset=utf-8 98.4088ms
+2025-12-04 01:38:18.806 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/profile-pictures/f2ee43f6-fe34-4ae3-ad40-d92c8a0ef71c.jpg - null null
+2025-12-04 01:38:18.836 -05:00 [INF] The file /profile-pictures/f2ee43f6-fe34-4ae3-ad40-d92c8a0ef71c.jpg was not modified
+2025-12-04 01:38:18.843 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/profile-pictures/f2ee43f6-fe34-4ae3-ad40-d92c8a0ef71c.jpg - 304 null image/jpeg 37.5803ms
+2025-12-04 01:38:22.994 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5130/Identity/Account/Logout?returnUrl=%2FHome%2FIndex - application/x-www-form-urlencoded 225
+2025-12-04 01:38:23.019 -05:00 [INF] Executing endpoint '/Account/Logout'
+2025-12-04 01:38:23.032 -05:00 [INF] Route matched with {page = "/Account/Logout", area = "Identity", action = "", controller = ""}. Executing page /Account/Logout
+2025-12-04 01:38:23.040 -05:00 [INF] Executing handler method Assignment1.Areas.Identity.Pages.Account.LogoutModel.OnPost - ModelState is "Valid"
+2025-12-04 01:38:23.052 -05:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-12-04 01:38:23.063 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-12-04 01:38:23.072 -05:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-12-04 01:38:23.079 -05:00 [INF] User logged out.
+2025-12-04 01:38:23.085 -05:00 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2025-12-04 01:38:23.098 -05:00 [INF] Executing LocalRedirectResult, redirecting to /Home/Index.
+2025-12-04 01:38:23.106 -05:00 [INF] Executed page /Account/Logout in 67.2865ms
+2025-12-04 01:38:23.117 -05:00 [INF] Executed endpoint '/Account/Logout'
+2025-12-04 01:38:23.121 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5130/Identity/Account/Logout?returnUrl=%2FHome%2FIndex - 302 0 null 127.0655ms
+2025-12-04 01:38:23.136 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Home/Index - null null
+2025-12-04 01:38:23.146 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-04 01:38:23.149 -05:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-12-04 01:38:23.153 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Home/Index - 302 0 null 16.1757ms
+2025-12-04 01:38:23.163 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Identity/Account/Login?ReturnUrl=%2FHome%2FIndex - null null
+2025-12-04 01:38:23.169 -05:00 [INF] Executing endpoint '/Account/Login'
+2025-12-04 01:38:23.171 -05:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2025-12-04 01:38:23.177 -05:00 [INF] Executing handler method Assignment1.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2025-12-04 01:38:23.182 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2025-12-04 01:38:23.187 -05:00 [INF] Executed handler method OnGetAsync, returned result .
+2025-12-04 01:38:23.192 -05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2025-12-04 01:38:23.195 -05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2025-12-04 01:38:23.201 -05:00 [INF] Executed page /Account/Login in 25.119ms
+2025-12-04 01:38:23.206 -05:00 [INF] Executed endpoint '/Account/Login'
+2025-12-04 01:38:23.210 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Identity/Account/Login?ReturnUrl=%2FHome%2FIndex - 200 null text/html; charset=utf-8 47.0088ms
+2025-12-04 01:38:25.128 -05:00 [INF] Application is shutting down...

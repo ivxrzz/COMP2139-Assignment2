@@ -1,0 +1,162 @@
+﻿@using Assignment1.Models
+@model List<Event>
+
+@if (Model == null || !Model.Any())
+{
+    <div class="alert alert-info">No events found.</div>
+}
+else
+{
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Date &amp; Time</th>
+                <th>Ticket Price</th>
+                <th>Tickets Available</th>
+                <th>Category</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var e in Model)
+        {
+            <tr class="@(e.TicketsAvailable < 5 ? "table-danger" : "")">
+                <td>@e.Title</td>
+                <td>@e.StartTimeDate.ToLocalTime().ToString("g")</td>
+                <td>@e.TicketPrice.ToString("C")</td>
+                <td>
+                    @if (e.TicketsAvailable < 5)
+                    {
+                        <span class="text-danger">@e.TicketsAvailable LOW!</span>
+                    }
+                    else
+                    {
+                        @e.TicketsAvailable
+                    }
+                </td>
+                <td>@(e.Category?.Name ?? "Unknown")</td>
+                <td>
+                    <button class="btn btn-sm btn-info mb-1" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#details-@e.EventId"
+                            aria-expanded="false">
+                        View Event
+                    </button>
+                    <div class="collapse mt-1" id="details-@e.EventId">
+                        <p><strong>Description:</strong> @e.Description</p>
+                        <p><strong>Tickets Purchased:</strong> @(e.PurchasedEvents?.Sum(p => p.Quantity) ?? 0)</p>
+                        <p><strong>Category:</strong> @(e.Category?.Name ?? "Unknown")</p>
+
+                        @if (e.PurchasedEvents != null && e.PurchasedEvents.Any())
+                        {
+                            <h6 class="mt-2">Purchased Tickets:</h6>
+                            <table class="table table-sm table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Guest Name</th>
+                                        <th>Email</th>
+                                        <th>Quantity</th>
+                                        <th>Purchase Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                @foreach (var p in e.PurchasedEvents)
+                                {
+                                    <tr>
+                                        <td>@p.GuestName</td>
+                                        <td>@p.GuestEmail</td>
+                                        <td>@p.Quantity</td>
+                                        <td>@p.PurchaseDate.ToLocalTime().ToString("g")</td>
+                                    </tr>
+                                }
+                                </tbody>
+                            </table>
+                        }
+                    </div>
+
+                    @if (e.TicketsAvailable > 0)
+                    {
+                        <button class="btn btn-sm btn-primary mb-1" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#purchaseForm-@e.EventId"
+                                aria-expanded="false">
+                            Purchase
+                        </button>
+                        <div class="collapse mt-1" id="purchaseForm-@e.EventId">
+                            <form asp-controller="Events" asp-action="Purchase" method="post">
+                                <input type="hidden" name="eventId" value="@e.EventId" />
+                                <div class="mb-1">
+                                    <label>Quantity:</label>
+                                    <input type="number"
+                                           name="quantity"
+                                           value="1"
+                                           min="1"
+                                           max="@e.TicketsAvailable"
+                                           class="form-control form-control-sm ticket-qty"
+                                           style="width:70px;"
+                                           data-price="@e.TicketPrice"
+                                           data-available="@e.TicketsAvailable" />
+                                    <small class="text-danger low-stock-msg" style="display:none;">
+                                        Only @e.TicketsAvailable tickets left!
+                                    </small>
+                                </div>
+                                <div class="mb-1">
+                                    <label>Your Name:</label>
+                                    <input type="text" name="guestName" class="form-control form-control-sm" required />
+                                </div>
+                                <div class="mb-1">
+                                    <label>Your Email:</label>
+                                    <input type="email" name="guestEmail" class="form-control form-control-sm" required />
+                                </div>
+                                <button type="submit" class="btn btn-sm btn-success">Confirm Purchase</button>
+                            </form>
+                        </div>
+                    }
+                    else
+                    {
+                        <span class="text-muted">Sold Out</span>
+                    }
+                    
+                    @if (User.IsInRole("Organizer") && e.OrganizerId == User.Identity?.Name)
+                    {
+                        <div class="mt-2">
+                            <a class="btn btn-outline-warning btn-sm"
+                               asp-controller="Events"
+                               asp-action="Edit"
+                               asp-route-id="@e.EventId">
+                                Edit (Organizer)
+                            </a>
+                            <a class="btn btn-outline-danger btn-sm"
+                               asp-controller="Events"
+                               asp-action="Delete"
+                               asp-route-id="@e.EventId">
+                                Delete (Organizer)
+                            </a>
+                        </div>
+                    }
+                    
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <div class="mt-1">
+                            <a class="btn btn-outline-warning btn-sm"
+                               asp-controller="Events"
+                               asp-action="Edit"
+                               asp-route-id="@e.EventId">
+                                Edit (Admin)
+                            </a>
+                            <a class="btn btn-outline-danger btn-sm"
+                               asp-controller="Events"
+                               asp-action="Delete"
+                               asp-route-id="@e.EventId">
+                                Delete (Admin)
+                            </a>
+                        </div>
+                    }
+
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

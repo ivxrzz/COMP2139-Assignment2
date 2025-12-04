@@ -1,0 +1,125 @@
+﻿@using Assignment1.Models
+@model List<Event>
+@if (User.IsInRole("Admin") || User.IsInRole("Organizer"))
+{
+    <ul>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="AdminOrganizer" asp-controller="Analytics" asp-action="MyAnalytics">
+                Analytics
+            </a>
+        </li>
+    </ul>
+}
+@{
+    ViewData["Title"] = "All Events";
+    var categories = ViewBag.Categories as List<Category> ?? new List<Category>();
+    var searchTitle = Context.Request.Query["searchTitle"].ToString() ?? "";
+    var categoryIdQuery = Context.Request.Query["categoryId"].ToString() ?? "";
+    var sortByQuery = Context.Request.Query["sortBy"].ToString() ?? "";
+}
+
+<h1 class="text-center">@ViewData["Title"]</h1>
+
+<form method="get" asp-action="Privacy" id="filterForm">
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <label>Search by Title:</label>
+            <input type="text" name="searchTitle" class="form-control" placeholder="Event title..." value="@searchTitle" />
+        </div>
+        <div class="col-md-4">
+            <label>Filter by Category:</label>
+            <select name="categoryId" class="form-control">
+                <option value="">All</option>
+                @foreach (var c in categories)
+                {
+                    <option value="@c.CategoryId" selected="@(categoryIdQuery == c.CategoryId.ToString())">
+                        @c.Name
+                    </option>
+                }
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <label>Sort by:</label>
+            <select name="sortBy" class="form-control">
+                <option value="" selected="@string.IsNullOrEmpty(sortByQuery)">None</option>
+                <option value="title" selected="@(sortByQuery == "title")">Title</option>
+                <option value="price" selected="@(sortByQuery == "price")">Price</option>
+                <option value="date" selected="@(sortByQuery == "date")">Date</option>
+            </select>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary mb-3">Search / Sort</button>
+</form>
+
+<div class="mb-3">
+    <span class="badge bg-secondary">
+        Cart: <span id="cartCount">0</span> tickets |
+        Total: $<span id="cartTotal">0.00</span>
+    </span>
+</div>
+
+<div id="eventsContainer">
+    @await Html.PartialAsync("_EventPartial", Model)
+</div>
+
+@section Scripts {
+    <script>
+        $(function () {
+            
+            function updateCartSummary() {
+                let totalCount = 0;
+                let totalPrice = 0;
+
+                $('.ticket-qty').each(function () {
+                    const qty = parseInt($(this).val()) || 0;
+                    const price = parseFloat($(this).data('price')) || 0;
+                    const available = parseInt($(this).data('available')) || 0;
+
+                    totalCount += qty;
+                    totalPrice += qty * price;
+
+                    const msg = $(this).siblings('.low-stock-msg');
+                    if (available <= 7 && qty > 0) {
+                        msg.show();
+                    } else {
+                        msg.hide();
+                    }
+                });
+
+                $('#cartCount').text(totalCount);
+                $('#cartTotal').text(totalPrice.toFixed(2));
+            }
+
+            $(document).on('input', '.ticket-qty', updateCartSummary);
+            updateCartSummary();
+            
+            function loadEventsAjax() {
+                const data = {
+                    searchTitle: $('input[name="searchTitle"]').val(),
+                    categoryId: $('select[name="categoryId"]').val(),
+                    sortBy: $('select[name="sortBy"]').val()
+                };
+
+                $.get('@Url.Action("EventsPartial", "Home")', data, function (html) {
+                    $('#eventsContainer').html(html);
+                    updateCartSummary();
+                });
+            }
+            
+            $('input[name="searchTitle"]').on('input', function () {
+                loadEventsAjax();
+            });
+            
+            $('select[name="categoryId"], select[name="sortBy"]').on('change', function () {
+                loadEventsAjax();
+            });
+            
+            $('#filterForm').on('submit', function (e) {
+                e.preventDefault();
+                loadEventsAjax();
+            });
+        });
+    </script>
+}

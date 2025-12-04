@@ -1,0 +1,70 @@
+﻿@model List<Assignment1.Models.Event>
+
+@{
+    ViewData["Title"] = "Event Overview";
+
+    var lowTickets = ViewBag.LowTickets as List<Assignment1.Models.Event> ?? new List<Assignment1.Models.Event>();
+    var numberOfEvents = ViewBag.NumberOfEvents ?? 0;
+    var numberOfCategories = ViewBag.NumberOfCategories ?? 0;
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="mb-3">
+    <p><strong>Total Events:</strong> @numberOfEvents</p>
+    <p><strong>Total Categories:</strong> @numberOfCategories</p>
+</div>
+
+<h3>Events with Fewer Than 5 Tickets:</h3>
+
+@if (lowTickets.Any())
+{
+    <ul class="list-group mb-3">
+        @foreach (var e in lowTickets)
+        {
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                @e.Title
+                <span class="badge bg-danger rounded-pill">@e.TicketsAvailable tickets left</span>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p class="text-success">All events have enough tickets available.</p>
+}
+
+<h3>All Events:</h3>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Date & Time</th>
+            <th>Ticket Price</th>
+            <th>Tickets Available</th>
+            <th>Category</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var e in Model)
+        {
+            <tr class="@(e.TicketsAvailable < 5 ? "table-danger" : "")">
+                <td>@e.Title</td>
+                <td>@e.StartTimeDate.ToString("g")</td>
+                <td>@e.TicketPrice.ToString("C")</td>
+                <td>@e.TicketsAvailable</td>
+                <td>@(e.Category != null ? e.Category.Name : "Unknown")</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No events available.</p>
+}
+
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>

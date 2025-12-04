@@ -1,0 +1,85 @@
+﻿@model IEnumerable<Assignment1.Models.Event>
+@using Microsoft.AspNetCore.Mvc.Rendering
+
+@{
+    ViewData["Title"] = "Event List";
+
+    var categories = ViewBag.Categories as IEnumerable<Assignment1.Models.Category> ?? new List<Assignment1.Models.Category>();
+    var searchTitle = Context.Request.Query["searchTitle"].ToString() ?? "";
+    var sortByQuery = Context.Request.Query["sortBy"].ToString() ?? "";
+
+    var categorySelectList = new SelectList(categories, "CategoryId", "Name", Context.Request.Query["categoryId"].ToString());
+    var sortOptions = new List<SelectListItem>
+    {
+        new SelectListItem { Value = "", Text = "None" },
+        new SelectListItem { Value = "title", Text = "Title" },
+        new SelectListItem { Value = "price", Text = "Price" },
+        new SelectListItem { Value = "date", Text = "Date" }
+    };
+    var sortSelectList = new SelectList(sortOptions, "Value", "Text", sortByQuery);
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="get" asp-action="Index" class="row g-3 mb-3">
+    <div class="col-md-4">
+        <label for="searchTitle" class="form-label">Search by Title</label>
+        <input type="text" name="searchTitle" class="form-control" placeholder="Enhypen, Sabrina Carpenter, The Weeknd" value="@searchTitle" />
+    </div>
+
+    <div class="col-md-4">
+        <label for="categoryId" class="form-label">Filter by Category</label>
+        <select asp-name="categoryId" asp-items="categorySelectList" class="form-select"></select>
+    </div>
+
+    <div class="col-md-4">
+        <label for="sortBy" class="form-label">Sort by</label>
+        <select asp-name="sortBy" asp-items="sortSelectList" class="form-select"></select>
+    </div>
+
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Search / Sort</button>
+    </div>
+</form>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Date and Time</th>
+            <th>Price</th>
+            <th>Available Tickets</th>
+            <th>Category</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var e in Model)
+        {
+            var category = categories.FirstOrDefault(c => c.CategoryId == e.CategoryId);
+            <tr>
+                <td>@e.Title</td>
+                <td>@e.StartTimeDate.ToString("g")</td>
+                <td>@e.TicketPrice.ToString("C")</td>
+                <td>
+                    @if (e.TicketsAvailable < 5)
+                    {
+                        <span class="text-danger">@e.TicketsAvailable LOW!</span>
+                    }
+                    else
+                    {
+                        @e.TicketsAvailable
+                    }
+                </td>
+                <td>@(category?.Name ?? "Unknown")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@e.EventId" class="btn btn-info btn-sm">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@e.EventId" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-success">Add New Event</a>
+<a asp-action="Overview" class="btn btn-secondary">Overview</a>

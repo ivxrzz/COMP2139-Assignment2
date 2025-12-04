@@ -1,0 +1,48 @@
+﻿@model Assignment1.Models.Event
+
+@{
+    ViewData["Title"] = "Edit Event";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post" asp-action="Edit">
+    <input type="hidden" asp-for="EventId" />
+
+    <div class="form-group mb-3">
+        <label asp-for="Title" class="form-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="StartTimeDate" class="form-label">Date and Time</label>
+        <input asp-for="StartTimeDate" type="datetime-local" class="form-control" 
+               value="@Model.StartTimeDate.ToString("yyyy-MM-ddTHH:mm")" />
+        <span asp-validation-for="StartTimeDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="TicketPrice" class="form-label"></label>
+        <input asp-for="TicketPrice" type="number" step="0.01" class="form-control" />
+        <span asp-validation-for="TicketPrice" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="TicketsAvailable" class="form-label"></label>
+        <input asp-for="TicketsAvailable" type="number" class="form-control" />
+        <span asp-validation-for="TicketsAvailable" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="CategoryId" class="form-label">Category</label>
+        <select asp-for="CategoryId" class="form-select" asp-items="@(ViewBag.Categories as SelectList)">
+            <option value="">-- Select Category --</option>
+        </select>
+
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Update Event</button>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</form>

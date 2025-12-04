@@ -1,0 +1,271 @@
+﻿@using Assignment1.Models 
+@model List<PurchasedEvent>
+
+
+@{
+    ViewData["Title"] = "My Dashboard";
+
+    var user = ViewBag.CurrentUser as ApplicationUser;
+
+    var now = DateTime.UtcNow;
+    var upcomingTickets = Model
+        .Where(p => p.Event.StartTimeDate >= now)
+        .OrderBy(p => p.Event.StartTimeDate)
+        .ToList();
+
+    var pastTickets = Model
+        .Where(p => p.Event.StartTimeDate < now)
+        .OrderByDescending(p => p.Event.StartTimeDate)
+        .ToList();
+
+    var myEvents = ViewBag.MyEvents as List<Event> ?? new List<Event>();
+}
+
+<div class="mb-4 text-center">
+    <h1 class="display-5">My Dashboard</h1>
+    <p class="text-muted">
+        Welcome @((user?.FullName) ?? user?.UserName ?? "back")!
+    </p>
+</div>
+
+@if (TempData["ProfileUpdated"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["ProfileUpdated"]
+    </div>
+}
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Success"]
+    </div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["Error"]
+    </div>
+}
+
+<div class="row">
+    <div class="col-lg-6 mb-4">
+        <div class="card h-100">
+            <div class="card-header bg-primary text-white">
+                My Tickets (Upcoming Events)
+            </div>
+            <div class="card-body">
+
+                @if (!upcomingTickets.Any())
+                {
+                    <p class="text-muted">You have no upcoming events.</p>
+                }
+                else
+                {
+                    foreach (var t in upcomingTickets)
+                    {
+                        var e = t.Event;
+
+                        <div class="border rounded p-2 mb-3 d-flex">
+                            <div class="flex-grow-1">
+                                <strong>@e.Title</strong><br />
+                                <span>@e.StartTimeDate.ToLocalTime().ToString("f")</span><br />
+                                <span>Tickets: @t.Quantity</span>
+                            </div>
+
+                            <div class="text-center ms-3">
+                                <!-- QR -->
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=@t.PurchasedEventId"
+                                     alt="QR Code"
+                                     class="mb-2" />
+
+                                
+                                <a asp-controller="Events"
+                                   asp-action="Ticket"
+                                   asp-route-id="@t.PurchasedEventId"
+                                   class="btn btn-sm btn-outline-primary mb-1">
+                                    View Ticket
+                                </a>
+
+                                
+                                <a asp-controller="Events"
+                                   asp-action="Ticket"
+                                   asp-route-id="@t.PurchasedEventId"
+                                   asp-route-print="true"
+                                   class="btn btn-sm btn-success">
+                                    Download PDF
+                                </a>
+                            </div>
+                        </div>
+                    }
+                }
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-6 mb-4">
+        <div class="card h-100">
+            <div class="card-header bg-secondary text-white">
+                Purchase History (Past Events)
+            </div>
+            <div class="card-body">
+
+                @if (!pastTickets.Any())
+                {
+                    <p class="text-muted">No past event purchases yet.</p>
+                }
+                else
+                {
+                    foreach (var t in pastTickets)
+                    {
+                        var e = t.Event;
+
+                        <div class="border rounded p-2 mb-3">
+                            <strong>@e.Title</strong><br />
+                            <span>@e.StartTimeDate.ToLocalTime().ToString("f")</span><br />
+                            <span>Tickets: @t.Quantity</span>
+
+                            <div class="mt-2 d-flex align-items-center">
+
+                                <!-- Rating Form -->
+                                <form asp-controller="Events"
+                                      asp-action="Rate"
+                                      method="post"
+                                      class="d-flex align-items-center">
+
+                                    <input type="hidden" name="purchasedEventId" value="@t.PurchasedEventId" />
+
+                                    <select name="rating" class="form-select form-select-sm" style="width:80px;">
+                                        @for (int i = 1; i <= 5; i++)
+                                        {
+                                            <option value="@i" selected="@(t.Rating == i)">
+                                                @i
+                                            </option>
+                                        }
+                                    </select>
+
+                                    <button type="submit" class="btn btn-sm btn-primary ms-2">
+                                        Save
+                                    </button>
+                                </form>
+
+                                <!-- Stars -->
+                                @if (t.Rating.HasValue)
+                                {
+                                    <span class="ms-2">
+                                        @(new string('★', t.Rating ?? 0))
+                                    </span>
+                                }
+
+                            </div>
+                        </div>
+                    }
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-lg-6 mb-4">
+        <div class="card h-100">
+            <div class="card-header bg-info text-white">
+                My Events (Organizer)
+            </div>
+            <div class="card-body">
+
+                @if (!myEvents.Any())
+                {
+                    <p class="text-muted">You haven’t created any events yet.</p>
+                }
+                else
+                {
+                    <table class="table table-sm">
+                        <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Sold</th>
+                            <th>Revenue</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach (var e in myEvents)
+                        {
+                            var sold = e.PurchasedEvents?.Sum(p => p.Quantity) ?? 0;
+                            var revenue = sold * e.TicketPrice;
+
+                            <tr>
+                                <td>@e.Title</td>
+                                <td>@sold</td>
+                                <td>@revenue.ToString("C")</td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+                }
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-6 mb-4">
+        <div class="card h-100">
+            <div class="card-header bg-light">
+                Profile
+            </div>
+            <div class="card-body">
+
+                <div class="d-flex mb-3">
+                    <!-- Profile Picture -->
+                    <div class="me-3">
+                        @if (!string.IsNullOrEmpty(user?.ProfilePictureUrl))
+                        {
+                            <img src="@user.ProfilePictureUrl"
+                                 class="rounded-circle"
+                                 style="width:80px;height:80px;object-fit:cover;"/>
+                        }
+                        else
+                        {
+                            <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center"
+                                 style="width:80px;height:80px;color:white;">
+                                <span>@(user?.UserName?.FirstOrDefault() ?? '?')</span>
+                            </div>
+                        }
+                    </div>
+                    
+                    <div>
+                        <strong>@(user?.FullName ?? user?.UserName)</strong><br/>
+                        <span>@user?.Email</span><br/>
+                        <span>@user?.PhoneNumber</span>
+                    </div>
+                </div>
+                <form asp-action="UpdateProfile"
+                      method="post"
+                      enctype="multipart/form-data">
+
+                    <div class="mb-2">
+                        <label class="form-label">Full Name</label>
+                        <input name="fullName" class="form-control" value="@user?.FullName"/>
+                    </div>
+
+                    <div class="mb-2">
+                        <label class="form-label">Phone Number</label>
+                        <input name="phoneNumber" class="form-control" value="@user?.PhoneNumber"/>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Profile Picture</label>
+                        <input type="file" name="profilePicture" class="form-control"/>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">
+                        Save Profile
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

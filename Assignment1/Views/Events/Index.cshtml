@@ -1,0 +1,70 @@
+﻿@using Assignment1.Models
+@model List<PurchasedEvent>
+
+@{
+    ViewData["Title"] = "My Purchased Events";
+}
+
+<h1 class="text-center mb-4">@ViewData["Title"]</h1>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info text-center">
+        You haven’t purchased any events yet.
+    </div>
+}
+else
+{
+    <div class="accordion" id="accordionPurchasedEvents">
+        @foreach (var p in Model)
+        {
+            var e = p.Event;
+
+            <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="heading-@p.PurchasedEventId">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse-@p.PurchasedEventId"
+                            aria-expanded="false"
+                            aria-controls="collapse-@p.PurchasedEventId">
+
+                        @e.Title (@(e.Category?.Name ?? "Unknown"))
+                        – @e.StartTimeDate.ToString("g")
+                    </button>
+                </h2>
+
+                <div id="collapse-@p.PurchasedEventId"
+                     class="accordion-collapse collapse"
+                     aria-labelledby="heading-@p.PurchasedEventId"
+                     data-bs-parent="#accordionPurchasedEvents">
+
+                    <div class="accordion-body">
+
+                        <p><strong>Tickets Purchased:</strong> @p.Quantity</p>
+                        <p><strong>Guest Name:</strong> @p.GuestName</p>
+                        <p><strong>Guest Email:</strong> @p.GuestEmail</p>
+                        <p><strong>Purchase Date:</strong> @p.PurchaseDate.ToLocalTime().ToString("g")</p>
+
+                        <hr />
+
+                        <div class="mt-3">
+                            <a asp-action="Ticket"
+                               asp-route-id="@p.PurchasedEventId"
+                               class="btn btn-primary btn-sm">
+                                View Ticket
+                            </a>
+
+                            <a asp-action="TicketPdf"
+                               asp-route-id="@p.PurchasedEventId"
+                               class="btn btn-secondary btn-sm">
+                                Download PDF
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

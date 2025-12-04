@@ -1,0 +1,61 @@
+﻿@model Assignment1.Models.Event
+
+@{
+    ViewData["Title"] = "Purchase Tickets";
+}
+
+<h2 class="mb-3">@ViewData["Title"]</h2>
+
+<div class="card mb-3" style="max-width: 600px;">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Title</h5>
+        <p class="card-text"><strong>Date:</strong> @Model.StartTimeDate.ToLocalTime().ToString("f")</p>
+        <p class="card-text"><strong>Tickets Available:</strong> @Model.TicketsAvailable</p>
+        <p class="card-text"><strong>Price per Ticket:</strong> @Model.TicketPrice.ToString("C")</p>
+
+        <form asp-action="Purchase" method="post">
+            <input type="hidden" name="eventId" value="@Model.EventId" />
+
+            <div class="mb-2">
+                <label for="guestName" class="form-label">Your Name:</label>
+                <input type="text" name="guestName" id="guestName" class="form-control" required />
+            </div>
+
+            <div class="mb-2">
+                <label for="guestEmail" class="form-label">Your Email:</label>
+                <input type="email" name="guestEmail" id="guestEmail" class="form-control" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="quantity" class="form-label">Number of Tickets:</label>
+                <input type="number" name="quantity" id="quantity" class="form-control" min="1" max="@Model.TicketsAvailable" value="1" required />
+            </div>
+
+            <button type="submit" class="btn btn-success">Purchase</button>
+        </form>
+        
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success mt-2">
+                @TempData["Success"]
+            </div>
+        }
+        
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger mt-2">
+                @TempData["Error"]
+            </div>
+        }
+        
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-danger mt-2">
+                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <div>@error.ErrorMessage</div>
+                }
+            </div>
+        }
+    </div>
+</div>
