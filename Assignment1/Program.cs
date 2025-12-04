@@ -31,6 +31,62 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var db = services.GetRequiredService<ApplicationDbContext>();
+    
+    db.Database.Migrate();
+    
+    if (!db.Categories.Any())
+    {
+        db.Categories.AddRange(
+            new Category { Name = "KPOP Concert" },   
+            new Category { Name = "R&B Concerts" },   
+            new Category { Name = "Others" }          
+        );
+        db.SaveChanges();
+    }
+    
+    if (!db.Events.Any())
+    {
+        var kpopId   = db.Categories.First(c => c.Name == "KPOP Concert").CategoryId;
+        var rnbId    = db.Categories.First(c => c.Name == "R&B Concerts").CategoryId;
+
+        db.Events.AddRange(
+            new Event
+            {
+                Title          = "Enhypen: WALK THE LINE",
+                CategoryId     = kpopId,
+                StartTimeDate  = new DateTime(2025, 11, 4, 20, 0, 0, DateTimeKind.Utc),
+                TicketPrice    = 30,
+                TicketsAvailable = 7,
+                Description    = "KPOP concert by Enhypen."
+            },
+            new Event
+            {
+                Title          = "Sabrina Carpenter: SHORT N'SWEET",
+                CategoryId     = rnbId,
+                StartTimeDate  = new DateTime(2025, 12, 4, 19, 0, 0, DateTimeKind.Utc),
+                TicketPrice    = 30,
+                TicketsAvailable = 4,
+                Description    = "Pop/R&B concert by Sabrina Carpenter."
+            },
+            new Event
+            {
+                Title          = "The Weeknd: After Hours Til Dawn",
+                CategoryId     = rnbId,
+                StartTimeDate  = new DateTime(2026, 1, 4, 21, 0, 0, DateTimeKind.Utc),
+                TicketPrice    = 30,
+                TicketsAvailable = 3,
+                Description    = "R&B concert by The Weeknd."
+            }
+        );
+
+        db.SaveChanges();
+    }
+}
+
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");

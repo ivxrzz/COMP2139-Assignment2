@@ -10,15 +10,18 @@
   <component name="ChangeListManager">
     <list default="true" id="21438de4-23c9-4540-a4ae-d10bab7e0678" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Assignment1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Assignment1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment1.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1.sln.DotSettings.user" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/Assignment1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/Assignment1.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/Views/Shared/_LoginPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/logs/log-20251204.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/logs/log-20251204.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Assignment1.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Assignment1.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment1/obj/Assignment1.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Assignment1.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment1/obj/Assignment1.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Assignment1.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.assets.cache" afterDir="false" />
@@ -39,6 +42,17 @@
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectTester/ProjectTester.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectTester/ProjectTester.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectTester/obj/Debug/net9.0/ProjectTester.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectTester/obj/Debug/net9.0/ProjectTester.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectTester/obj/Debug/net9.0/ProjectTester.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectTester/obj/Debug/net9.0/ProjectTester.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectTester/obj/Debug/net9.0/ProjectTester.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectTester/obj/Debug/net9.0/ProjectTester.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectTester/obj/Debug/net9.0/ProjectTester.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectTester/obj/Debug/net9.0/ProjectTester.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectTester/obj/ProjectTester.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectTester/obj/ProjectTester.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectTester/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectTester/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectTester/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectTester/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectTester/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectTester/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectTester/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectTester/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectTester/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectTester/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +193,7 @@
       <workItem from="1764829462906" duration="848000" />
       <workItem from="1764830318236" duration="369000" />
       <workItem from="1764830691694" duration="806000" />
-      <workItem from="1764831502897" duration="6935000" />
+      <workItem from="1764831502897" duration="9613000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <option name="closed" value="true" />
@@ -189,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764883264128</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Unit Project Tester">
+      <option name="closed" value="true" />
+      <created>1764889513927</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764889513927</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +225,8 @@
     </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+    <MESSAGE value="Added Unit Project Tester" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Unit Project Tester" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
