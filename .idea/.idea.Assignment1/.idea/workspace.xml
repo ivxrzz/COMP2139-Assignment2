@@ -10,20 +10,35 @@
   <component name="ChangeListManager">
     <list default="true" id="21438de4-23c9-4540-a4ae-d10bab7e0678" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Assignment1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Assignment1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/Assignment1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/Assignment1.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/bin/Debug/net9.0/Assignment1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment1/logs/log-20251204.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/logs/log-20251204.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/obj/Assignment1.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Assignment1.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/obj/Assignment1.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Assignment1.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/obj/Assignment1.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Assignment1.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/ref/Assignment1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/ref/Assignment1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/refint/Assignment1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/refint/Assignment1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/rpswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/rpswa.dswa.cache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,12 +80,21 @@
     <setting file="file://$PROJECT_DIR$/Assignment1/Views/Shared/InternalError.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assignment1/Views/Shared/NotFound.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assignment1/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assignment1/obj/Debug/net9.0/Assignment1.sourcelink.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectTester/Controllers/AnalyticsControllerTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectTester/Controllers/EventsControllerTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectTester/Controllers/HomeControllerTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectTester/Services/ServicesAndLoggingTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectTester/TestHelpers/TestDbContextFactory.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="33sVwto948472XiOrTqPrMzI1No" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -155,8 +179,17 @@
       <workItem from="1764829462906" duration="848000" />
       <workItem from="1764830318236" duration="369000" />
       <workItem from="1764830691694" duration="806000" />
-      <workItem from="1764831502897" duration="886000" />
+      <workItem from="1764831502897" duration="6935000" />
     </task>
+    <task id="LOCAL-00001" summary="Changes">
+      <option name="closed" value="true" />
+      <created>1764883264128</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764883264128</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +202,8 @@
       <path value="$PROJECT_DIR$/Assignment1" />
     </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
